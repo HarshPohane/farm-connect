@@ -1,15 +1,16 @@
 import { Link, NavLink } from "react-router-dom";
+import logo from "./icon-images/connect.png";
 import "./Navbar.css";
 
 function Navbar() {
   return (
     <nav className="navbar">
-      {/* Logo */}
       <Link to="/" className="navbar-logo">
-        🌱 Farm-Connect
+        <img src={logo} alt="Farm-Connect Logo" />
+        <span>Farm-Connect</span>
       </Link>
 
-      {/* Navigation Links */}
+    
       <div className="navbar-links">
         <NavLink to="/" end>Home</NavLink>
         <NavLink to="/workers">Workers</NavLink>

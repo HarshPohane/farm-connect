@@ -53,11 +53,12 @@
 body {
   margin: 0;
   min-height: 100vh;
+  overflow-x: hidden;
 }
 
 #root {
   width: 100%;
-  max-width: none;
+  max-width: 100%;
   margin: 0;
   text-align: left;
   border: none;
@@ -65,6 +66,7 @@ body {
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 h1,

@@ -1,0 +1,70 @@
+
+.custom-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 22px;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+
+.custom-button.primary {
+  background-color: #1B5E20;
+  color: #FFFFFF;
+}
+
+.custom-button.primary:hover {
+  background-color: #144718;
+  transform: translateY(-2px);
+}
+
+.custom-button.secondary {
+  background-color: #FFFFFF;
+  color: #1B5E20;
+  border-color: #1B5E20;
+}
+
+.custom-button.secondary:hover {
+  background-color: #E8F5E9;
+}
+
+.custom-button.success {
+  background-color: #10B981;
+  color: #FFFFFF;
+}
+
+.custom-button.success:hover {
+  background-color: #059669;
+}
+
+
+.custom-button.warning {
+  background-color: #D97706;
+  color: #FFFFFF;
+}
+
+.custom-button.warning:hover {
+  background-color: #B45309;
+}
+
+
+.custom-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+}
+
+
+@media (max-width: 480px) {
+  .custom-button {
+    padding: 10px 16px;
+    font-size: 14px;
+  }
+}
