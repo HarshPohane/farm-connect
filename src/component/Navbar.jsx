@@ -1,15 +1,18 @@
 import { NavLink } from "react-router-dom";
+import Button from "./Button/button";
 import "./Navbar.css";
 
 function Navbar() {
   return (
     <nav className="navbar">
-      <NavLink to="/" className="navbar-logo">
-        <img src="/images/logo.png" alt="FarmConnect logo" />
-        <span>FarmConnect</span>
+
+      <NavLink to="/" className="nav-logo">
+        <img src="/images/logo.png" alt="FarmConnect Logo" />
+
+        <span>Farm<span className="logo-green">Connect</span></span>
       </NavLink>
 
-      <div className="navbar-links">
+      <div className="nav-links">
         <NavLink to="/">Home</NavLink>
         <NavLink to="/workers">Workers</NavLink>
         <NavLink to="/equipment">Equipment</NavLink>
@@ -17,15 +20,20 @@ function Navbar() {
         <NavLink to="/bookings">Bookings</NavLink>
       </div>
 
-      <div className="navbar-actions">
-        <NavLink to="/login" className="login-link">
-          Login
-        </NavLink>
+      <div className="nav-buttons">
+        <Button
+          text="Login"
+          link="/login"
+          type="outline"
+        />
 
-        <NavLink to="/register" className="register-link">
-          Register
-        </NavLink>
+        <Button
+          text="Get Started"
+          link="/register"
+          type="primary"
+        />
       </div>
+
     </nav>
   );
 }

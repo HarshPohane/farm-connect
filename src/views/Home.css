@@ -1,303 +1,326 @@
-import { Link } from "react-router-dom";
-import Button from "../component/Button/Button";
-import "./Home.css";
-
-function Home() {
-  return (
-    <div className="home-page">
-
-      {/* ================= HERO SECTION ================= */}
-
-      <section className="home-hero">
-
-        <div className="home-content">
-
-          <span className="home-tag">
-            SMART FARMING, BETTER FUTURE
-          </span>
-
-          <h1>
-            Your Farm,
-            <br />
-            Your People,
-            <br />
-            <span>Your Success.</span>
-          </h1>
-
-          <p>
-            FarmConnect connects farmers with agricultural workers,
-            equipment rentals, and transportation services.
-            Everything you need for your farm, in one place.
-          </p>
-
-          <div className="home-buttons">
-
-            <Link to="/workers">
-              <Button text="Find Workers" />
-            </Link>
-
-            <Link to="/equipment">
-              <Button
-                text="Explore Equipment"
-                variant="secondary"
-              />
-            </Link>
-
-          </div>
-
-          {/* Statistics */}
-
-          <div className="home-stats">
-
-            <div>
-              <h3>3-in-1</h3>
-              <p>Farm Services</p>
-            </div>
-
-            <div>
-              <h3>Easy</h3>
-              <p>Booking Process</p>
-            </div>
-
-            <div>
-              <h3>24/7</h3>
-              <p>Online Access</p>
-            </div>
-
-          </div>
-
-        </div>
-
-        {/* Hero Image */}
-
-        <div className="home-image">
-
-          <img
-            src="/images/farming.png"
-            alt="Farmer working in a green agricultural field"
-          />
-
-          <div className="image-badge">
-            <span className="badge-icon">✓</span>
-
-            <div>
-              <h4>Farm Made Easy</h4>
-              <p>Everything in one place</p>
-            </div>
-          </div>
-
-        </div>
-
-      </section>
-
-
-      {/* ================= SERVICES SECTION ================= */}
-
-      <section className="home-services">
-
-        <div className="section-heading">
-
-          <span className="section-tag">
-            OUR SERVICES
-          </span>
-
-          <h2>
-            Everything Your Farm Needs
-          </h2>
-
-          <p>
-            Find the right people, equipment, and transportation
-            to make your farming work easier.
-          </p>
-
-        </div>
-
-
-        <div className="service-grid">
-
-          {/* Workers Card */}
-
-          <div className="service-card">
-
-            <div className="service-icon worker-bg">
-              <img
-                src="/images/worker-icon.png"
-                alt="Agricultural worker"
-              />
-            </div>
-
-            <h3>Find Farm Workers</h3>
-
-            <p>
-              Connect with agricultural workers for harvesting,
-              planting, irrigation, and other farm activities.
-            </p>
-
-            <Link to="/workers" className="service-link">
-              Find Workers <span>→</span>
-            </Link>
-
-          </div>
-
-
-          {/* Equipment Card */}
-
-          <div className="service-card">
-
-            <div className="service-icon equipment-bg">
-              <img
-                src="/images/equipment-icon.png"
-                alt="Agricultural equipment"
-              />
-            </div>
-
-            <h3>Rent Equipment</h3>
-
-            <p>
-              Find tractors, harvesters, and other agricultural
-              equipment according to your farming needs.
-            </p>
-
-            <Link to="/equipment" className="service-link">
-              Explore Equipment <span>→</span>
-            </Link>
-
-          </div>
-
-
-          {/* Transportation Card */}
-
-          <div className="service-card">
-
-            <div className="service-icon transport-bg">
-              <img
-                src="/images/transport-icon.png"
-                alt="Farm transportation truck"
-              />
-            </div>
-
-            <h3>Book Transportation</h3>
-
-            <p>
-              Arrange transportation to move crops, seeds,
-              fertilizers, and agricultural products.
-            </p>
-
-            <Link to="/transport" className="service-link">
-              Book Transport <span>→</span>
-            </Link>
-
-          </div>
-
-        </div>
-
-      </section>
-
-
-      {/* ================= HOW IT WORKS ================= */}
-
-      <section className="home-how">
-
-        <div className="section-heading">
-
-          <span className="section-tag">
-            SIMPLE PROCESS
-          </span>
-
-          <h2>
-            How FarmConnect Works
-          </h2>
-
-          <p>
-            Get started in three simple steps.
-          </p>
-
-        </div>
-
-
-        <div className="steps-grid">
-
-          <div className="step-card">
-
-            <div className="step-number">01</div>
-
-            <h3>Choose a Service</h3>
-
-            <p>
-              Select workers, agricultural equipment,
-              or transportation for your farm.
-            </p>
-
-          </div>
-
-
-          <div className="step-card">
-
-            <div className="step-number">02</div>
-
-            <h3>Find What You Need</h3>
-
-            <p>
-              Browse available services and choose
-              an option suitable for your requirements.
-            </p>
-
-          </div>
-
-
-          <div className="step-card">
-
-            <div className="step-number">03</div>
-
-            <h3>Make a Booking</h3>
-
-            <p>
-              Submit your booking request and manage
-              your selected services from one place.
-            </p>
-
-          </div>
-
-        </div>
-
-      </section>
-
-
-      {/* ================= CALL TO ACTION ================= */}
-
-      <section className="home-cta">
-
-        <div className="cta-content">
-
-          <span className="cta-tag">
-            GROW WITH FARMCONNECT
-          </span>
-
-          <h2>
-            Make Farming Easier.
-            <br />
-            Grow Your Future.
-          </h2>
-
-          <p>
-            Start exploring agricultural services and find
-            the support your farm needs.
-          </p>
-
-        </div>
-
-        <div className="cta-button">
-
-          <Link to="/workers">
-            <Button text="Get Started" />
-          </Link>
-
-        </div>
-
-      </section>
-
-    </div>
-  );
+.home {
+  width: 100%;
+  color: #1b4332;
+  background: #ffffff;
+  font-family: Arial, sans-serif;
 }
 
-export default Home;
+/* Common styles */
+
+.section-tag {
+  color: #f97316;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.section-heading {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.section-heading h2,
+.intro-section h2,
+.benefits-content h2 {
+  font-size: 34px;
+  margin: 15px 0;
+}
+
+.section-heading > p:last-child,
+.section-description {
+  color: #526357;
+  line-height: 1.8;
+}
+
+/* Hero */
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 45px;
+  padding: 75px 8%;
+  background: #f4f8f2;
+}
+
+.hero-content {
+  flex: 1;
+}
+
+.hero-tag {
+  color: #f97316;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  line-height: 1.2;
+  margin: 20px 0;
+}
+
+.hero-content h1 span {
+  display: block;
+  color: #21864a;
+}
+
+.hero-description {
+  color: #526357;
+  font-size: 16px;
+  line-height: 1.8;
+  max-width: 550px;
+}
+
+.hero-buttons,
+.cta-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 25px;
+}
+
+.hero-points {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  margin-top: 25px;
+  color: #21864a;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.hero-image {
+  flex: 1;
+}
+
+.hero-image img {
+  width: 100%;
+  max-width: 520px;
+  height: 380px;
+  object-fit: cover;
+  border-radius: 18px;
+}
+
+/* Introduction */
+
+.intro-section {
+  padding: 65px 12%;
+  text-align: center;
+}
+
+.intro-section h2 {
+  max-width: 700px;
+  margin: 15px auto;
+}
+
+.section-description {
+  max-width: 850px;
+  margin: 20px auto 0;
+}
+
+/* Services */
+
+.services-section,
+.how-section {
+  padding: 70px 8%;
+  background: #f8faf7;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 25px;
+}
+
+.service-card {
+  padding: 25px;
+  background: #ffffff;
+  border: 1px solid #e5eee5;
+  border-radius: 14px;
+  text-align: center;
+}
+
+.service-card img {
+  width: 100%;
+  height: 175px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+.service-card h3 {
+  font-size: 21px;
+  margin: 10px 0;
+}
+
+.service-card p {
+  color: #526357;
+  line-height: 1.7;
+  min-height: 82px;
+  margin-bottom: 22px;
+}
+
+/* How It Works */
+
+.how-section {
+  background: #ffffff;
+}
+
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.step-card {
+  padding: 24px;
+  background: #f4f8f2;
+  border-radius: 12px;
+}
+
+.step-number {
+  color: #21864a;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.step-card h3 {
+  font-size: 18px;
+  margin-top: 18px;
+}
+
+.step-card p {
+  color: #526357;
+  line-height: 1.7;
+}
+
+/* Benefits */
+
+.benefits-section {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  padding: 75px 8%;
+}
+
+.benefits-image,
+.benefits-content {
+  flex: 1;
+}
+
+.benefits-image img {
+  width: 100%;
+  height: 380px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.benefits-content > p:not(.section-tag) {
+  color: #526357;
+  line-height: 1.8;
+}
+
+.benefits-content ul {
+  padding-left: 22px;
+  margin: 25px 0;
+}
+
+.benefits-content li {
+  color: #526357;
+  line-height: 2;
+  padding-left: 5px;
+}
+
+/* Call to Action */
+
+.cta-section {
+  padding: 65px 8%;
+  background: #edf6eb;
+  text-align: center;
+}
+
+.cta-section h2 {
+  font-size: 34px;
+  margin: 15px 0;
+}
+
+.cta-section > p:not(.section-tag) {
+  color: #526357;
+  line-height: 1.8;
+}
+
+.cta-buttons {
+  justify-content: center;
+}
+
+/* Responsive Design */
+
+@media (max-width: 900px) {
+  .hero {
+    padding: 55px 6%;
+  }
+
+  .hero-content h1 {
+    font-size: 38px;
+  }
+
+  .service-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .steps-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .benefits-section {
+    gap: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero,
+  .benefits-section {
+    flex-direction: column;
+    padding: 40px 6%;
+  }
+
+  .hero-content h1 {
+    font-size: 34px;
+  }
+
+  .hero-image img,
+  .benefits-image img {
+    height: 260px;
+  }
+
+  .intro-section,
+  .services-section,
+  .how-section {
+    padding: 45px 6%;
+  }
+
+  .section-heading h2,
+  .intro-section h2,
+  .benefits-content h2,
+  .cta-section h2 {
+    font-size: 27px;
+  }
+
+  .service-grid,
+  .steps-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-buttons {
+    justify-content: flex-start;
+  }
+
+  .hero-points {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .service-card p {
+    min-height: auto;
+  }
+}

@@ -1,32 +1,84 @@
+/* Common Button Style */
+
 .custom-btn {
-  padding: 12px 22px;
-  border: none;
-  border-radius: 6px;
-  font-size: 15px;
-  font-weight: bold;
+  width: 180px;
+  height: 48px;
+  padding: 0 12px;
+  box-sizing: border-box;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 2px solid transparent;
+  border-radius: 8px;
+
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+
   cursor: pointer;
-  transition: background-color 0.2s;
+  transition: background-color 0.3s, color 0.3s;
 }
 
+/* Primary Green Button */
+
 .custom-btn.primary {
-  background-color: #1b5e20;
-  color: white;
+  background-color: #21864a;
+  color: #ffffff;
+  border-color: #21864a;
 }
 
 .custom-btn.primary:hover {
-  background-color: #144718;
+  background-color: #176638;
+  border-color: #176638;
 }
 
-.custom-btn.secondary {
+/* White Outline Button */
+
+.custom-btn.outline {
+  background-color: #ffffff;
+  color: #21864a;
+  border-color: #21864a;
+}
+
+.custom-btn.outline:hover {
+  background-color: #eaf6ed;
+  color: #176638;
+}
+
+/* Orange Button */
+
+.custom-btn.orange {
   background-color: #f97316;
-  color: white;
+  color: #ffffff;
+  border-color: #f97316;
 }
 
-.custom-btn.secondary:hover {
-  background-color: #ea580c;
+.custom-btn.orange:hover {
+  background-color: #d97706;
+  border-color: #d97706;
 }
 
-.custom-btn:focus-visible {
-  outline: 2px solid #1b5e20;
-  outline-offset: 3px;
+/* Disabled Button */
+
+.custom-btn:disabled {
+  background-color: #d1d5db;
+  color: #6b7280;
+  border-color: #d1d5db;
+  cursor: not-allowed;
+}
+
+/* Mobile Responsive */
+
+@media (max-width: 600px) {
+  .custom-btn {
+    width: 160px;
+    height: 46px;
+    font-size: 13px;
+  }
 }
