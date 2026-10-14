@@ -22,8 +22,7 @@
   gap: 10px;
 
   color: #1b4332;
-  font-size: 23px;
-  font-weight: bold;
+  font-size: 10px;
   text-decoration: none;
   white-space: nowrap;
 }
@@ -48,15 +47,15 @@
 
 .nav-links a {
   color: #46564b;
-  font-size: 14px;
-  font-weight: 600;
+  font-size: 16px;
+  font-weight: 500;
   text-decoration: none;
   transition: 0.3s;
 }
 
 .nav-links a:hover,
 .nav-links a.active {
-  color: #21864a;
+  color: #2e8b57;
 }
 
 /* Navbar Buttons */

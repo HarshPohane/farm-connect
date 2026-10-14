@@ -1,15 +1,17 @@
 import { NavLink } from "react-router-dom";
 import Button from "./Button/button";
+import logo from "./icon-images/connect.png";
 import "./Navbar.css";
 
 function Navbar() {
   return (
     <nav className="navbar">
-
       <NavLink to="/" className="nav-logo">
-        <img src="/images/logo.png" alt="FarmConnect Logo" />
+        <img src={logo} alt="Farm-Connect" className="logo-icon" />
 
-        <span>Farm<span className="logo-green">Connect</span></span>
+        <h2 className="logo-name">
+          <span>Farm-Connect</span>
+        </h2>
       </NavLink>
 
       <div className="nav-links">
@@ -21,19 +23,9 @@ function Navbar() {
       </div>
 
       <div className="nav-buttons">
-        <Button
-          text="Login"
-          link="/login"
-          type="outline"
-        />
-
-        <Button
-          text="Get Started"
-          link="/register"
-          type="primary"
-        />
+        <Button text="Login" link="/login" type="outline" />
+        <Button text="Get Started" link="/register" type="primary" />
       </div>
-
     </nav>
   );
 }
