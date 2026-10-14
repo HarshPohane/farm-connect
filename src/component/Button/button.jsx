@@ -1,35 +1,23 @@
-
-import { Link } from "react-router-dom";
-import "./Button.css";
+import "./button.css";
 
 function Button({
   children,
-  to,
-  variant = "primary",
-  type = "button",
+  text,
   onClick,
+  type = "button",
+  variant = "primary",
   disabled = false,
 }) {
-  const className = `custom-button ${variant}`;
+  const content = children ?? text;
 
-  // Navigation button
-  if (to) {
-    return (
-      <Link to={to} className={className}>
-        {children}
-      </Link>
-    );
-  }
-
-  // Normal button
   return (
     <button
       type={type}
-      className={className}
+      className={`custom-button ${variant}`}
       onClick={onClick}
       disabled={disabled}
     >
-      {children}
+      {content}
     </button>
   );
 }

@@ -1,382 +1,303 @@
+import { Link } from "react-router-dom";
+import Button from "../component/Button/Button";
+import "./Home.css";
 
-/* Home.css */
+function Home() {
+  return (
+    <div className="home-page">
 
-/* Main Home Page */
-.home {
-  width: 100%;
-  color: #1A2E22;
-  font-family: Arial, sans-serif;
-  overflow: hidden;
-  background-color: #FFFFFF;
+      {/* ================= HERO SECTION ================= */}
+
+      <section className="home-hero">
+
+        <div className="home-content">
+
+          <span className="home-tag">
+            SMART FARMING, BETTER FUTURE
+          </span>
+
+          <h1>
+            Your Farm,
+            <br />
+            Your People,
+            <br />
+            <span>Your Success.</span>
+          </h1>
+
+          <p>
+            FarmConnect connects farmers with agricultural workers,
+            equipment rentals, and transportation services.
+            Everything you need for your farm, in one place.
+          </p>
+
+          <div className="home-buttons">
+
+            <Link to="/workers">
+              <Button text="Find Workers" />
+            </Link>
+
+            <Link to="/equipment">
+              <Button
+                text="Explore Equipment"
+                variant="secondary"
+              />
+            </Link>
+
+          </div>
+
+          {/* Statistics */}
+
+          <div className="home-stats">
+
+            <div>
+              <h3>3-in-1</h3>
+              <p>Farm Services</p>
+            </div>
+
+            <div>
+              <h3>Easy</h3>
+              <p>Booking Process</p>
+            </div>
+
+            <div>
+              <h3>24/7</h3>
+              <p>Online Access</p>
+            </div>
+
+          </div>
+
+        </div>
+
+        {/* Hero Image */}
+
+        <div className="home-image">
+
+          <img
+            src="/images/farming.png"
+            alt="Farmer working in a green agricultural field"
+          />
+
+          <div className="image-badge">
+            <span className="badge-icon">✓</span>
+
+            <div>
+              <h4>Farm Made Easy</h4>
+              <p>Everything in one place</p>
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+
+
+      {/* ================= SERVICES SECTION ================= */}
+
+      <section className="home-services">
+
+        <div className="section-heading">
+
+          <span className="section-tag">
+            OUR SERVICES
+          </span>
+
+          <h2>
+            Everything Your Farm Needs
+          </h2>
+
+          <p>
+            Find the right people, equipment, and transportation
+            to make your farming work easier.
+          </p>
+
+        </div>
+
+
+        <div className="service-grid">
+
+          {/* Workers Card */}
+
+          <div className="service-card">
+
+            <div className="service-icon worker-bg">
+              <img
+                src="/images/worker-icon.png"
+                alt="Agricultural worker"
+              />
+            </div>
+
+            <h3>Find Farm Workers</h3>
+
+            <p>
+              Connect with agricultural workers for harvesting,
+              planting, irrigation, and other farm activities.
+            </p>
+
+            <Link to="/workers" className="service-link">
+              Find Workers <span>→</span>
+            </Link>
+
+          </div>
+
+
+          {/* Equipment Card */}
+
+          <div className="service-card">
+
+            <div className="service-icon equipment-bg">
+              <img
+                src="/images/equipment-icon.png"
+                alt="Agricultural equipment"
+              />
+            </div>
+
+            <h3>Rent Equipment</h3>
+
+            <p>
+              Find tractors, harvesters, and other agricultural
+              equipment according to your farming needs.
+            </p>
+
+            <Link to="/equipment" className="service-link">
+              Explore Equipment <span>→</span>
+            </Link>
+
+          </div>
+
+
+          {/* Transportation Card */}
+
+          <div className="service-card">
+
+            <div className="service-icon transport-bg">
+              <img
+                src="/images/transport-icon.png"
+                alt="Farm transportation truck"
+              />
+            </div>
+
+            <h3>Book Transportation</h3>
+
+            <p>
+              Arrange transportation to move crops, seeds,
+              fertilizers, and agricultural products.
+            </p>
+
+            <Link to="/transport" className="service-link">
+              Book Transport <span>→</span>
+            </Link>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+      {/* ================= HOW IT WORKS ================= */}
+
+      <section className="home-how">
+
+        <div className="section-heading">
+
+          <span className="section-tag">
+            SIMPLE PROCESS
+          </span>
+
+          <h2>
+            How FarmConnect Works
+          </h2>
+
+          <p>
+            Get started in three simple steps.
+          </p>
+
+        </div>
+
+
+        <div className="steps-grid">
+
+          <div className="step-card">
+
+            <div className="step-number">01</div>
+
+            <h3>Choose a Service</h3>
+
+            <p>
+              Select workers, agricultural equipment,
+              or transportation for your farm.
+            </p>
+
+          </div>
+
+
+          <div className="step-card">
+
+            <div className="step-number">02</div>
+
+            <h3>Find What You Need</h3>
+
+            <p>
+              Browse available services and choose
+              an option suitable for your requirements.
+            </p>
+
+          </div>
+
+
+          <div className="step-card">
+
+            <div className="step-number">03</div>
+
+            <h3>Make a Booking</h3>
+
+            <p>
+              Submit your booking request and manage
+              your selected services from one place.
+            </p>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+      {/* ================= CALL TO ACTION ================= */}
+
+      <section className="home-cta">
+
+        <div className="cta-content">
+
+          <span className="cta-tag">
+            GROW WITH FARMCONNECT
+          </span>
+
+          <h2>
+            Make Farming Easier.
+            <br />
+            Grow Your Future.
+          </h2>
+
+          <p>
+            Start exploring agricultural services and find
+            the support your farm needs.
+          </p>
+
+        </div>
+
+        <div className="cta-button">
+
+          <Link to="/workers">
+            <Button text="Get Started" />
+          </Link>
+
+        </div>
+
+      </section>
+
+    </div>
+  );
 }
 
-.home img {
-  display: block;
-  max-width: 100%;
-}
-
-/* Hero Section */
-.hero {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 40px;
-  padding: 70px 8%;
-  background-color: #FFFFFF;
-}
-
-.hero-content {
-  flex: 1;
-}
-
-/* Orange Hero Tag */
-.hero-tag {
-  color: #F97316;
-  font-size: 13px;
-  font-weight: 700;
-  letter-spacing: 2px;
-  margin-bottom: 18px;
-}
-
-.hero-content h1 {
-  color: #1A2E22;
-  font-size: 46px;
-  line-height: 1.2;
-  font-weight: 700;
-  margin-bottom: 22px;
-}
-
-.hero-content h1 span {
-  color: #1B5E20;
-}
-
-.hero-description {
-  color: #526357;
-  font-size: 16px;
-  line-height: 1.8;
-  max-width: 520px;
-  margin-bottom: 28px;
-}
-
-.hero-buttons {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 15px;
-}
-
-.hero-image {
-  flex: 1;
-}
-
-.hero-image img {
-  width: 100%;
-  height: 370px;
-  object-fit: cover;
-  border-radius: 18px;
-}
-
-/* Hero Banner */
-.hero-banner {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 320px;
-  padding: 50px 8%;
-  overflow: hidden;
-  background-color: #1A2E22;
-}
-
-.banner-image {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.hero-banner::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-color: rgba(9, 33, 21, 0.65);
-  z-index: 1;
-}
-
-.banner-overlay {
-  position: relative;
-  z-index: 2;
-  width: 100%;
-  max-width: 750px;
-  text-align: center;
-  color: #FFFFFF;
-}
-
-.banner-overlay > p {
-  color: #A7F3D0;
-  font-size: 13px;
-  font-weight: 700;
-  letter-spacing: 3px;
-  margin-bottom: 15px;
-}
-
-.banner-overlay h2 {
-  color: #FFFFFF;
-  font-size: 34px;
-  line-height: 1.4;
-  margin-bottom: 25px;
-}
-
-/* Section Headings */
-.section-heading {
-  text-align: center;
-  margin-bottom: 40px;
-}
-
-.section-heading > p {
-  color: #F97316;
-  font-size: 13px;
-  font-weight: 700;
-  letter-spacing: 2px;
-  margin-bottom: 12px;
-}
-
-.section-heading h2 {
-  color: #1A2E22;
-  font-size: 34px;
-  margin-bottom: 15px;
-}
-
-.section-heading span {
-  display: block;
-  color: #526357;
-  font-size: 16px;
-  line-height: 1.7;
-}
-
-/* Services Section */
-.services {
-  padding: 70px 8%;
-  background-color: #F7FAF7;
-}
-
-.service-container {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 25px;
-}
-
-/* Service Cards */
-.service-card {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  background-color: #FFFFFF;
-  padding: 20px;
-  border: 1px solid #E2E8E2;
-  border-radius: 15px;
-  box-shadow: none;
-  transition: transform 0.3s ease;
-}
-
-.service-card:hover {
-  transform: translateY(-5px);
-  box-shadow: none;
-}
-
-.service-card img {
-  width: 100%;
-  height: 210px;
-  object-fit: cover;
-  border-radius: 10px;
-  margin-bottom: 20px;
-}
-
-.service-card h3 {
-  color: #1B5E20;
-  font-size: 21px;
-  margin-bottom: 12px;
-}
-
-.service-card p {
-  color: #526357;
-  font-size: 15px;
-  line-height: 1.7;
-  margin-bottom: 20px;
-  flex-grow: 1;
-}
-
-/* Why Choose Us Section */
-.why-us {
-  padding: 70px 8%;
-  background-color: #FFFFFF;
-}
-
-.features {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 25px;
-}
-
-/* Feature Cards */
-.feature-card {
-  text-align: center;
-  padding: 30px 22px;
-  background-color: #F7FAF7;
-  border: 1px solid #E2E8E2;
-  border-radius: 15px;
-  box-shadow: none;
-  transition: transform 0.3s ease;
-}
-
-.feature-card:hover {
-  transform: translateY(-5px);
-  box-shadow: none;
-}
-
-.feature-card span {
-  display: block;
-  font-size: 40px;
-  margin-bottom: 18px;
-}
-
-.feature-card h3 {
-  color: #1B5E20;
-  font-size: 21px;
-  margin-bottom: 12px;
-}
-
-.feature-card p {
-  color: #526357;
-  font-size: 15px;
-  line-height: 1.7;
-}
-
-/* Call to Action */
-.home-cta {
-  padding: 65px 8%;
-  text-align: center;
-  background-color: #EDF7EE;
-}
-
-.home-cta h2 {
-  color: #1B5E20;
-  font-size: 34px;
-  margin-bottom: 18px;
-}
-
-.home-cta p {
-  max-width: 600px;
-  margin: 0 auto 25px;
-  color: #405447;
-  font-size: 16px;
-  line-height: 1.8;
-}
-
-/* Tablet Responsive Design */
-@media (max-width: 900px) {
-  .hero {
-    gap: 25px;
-    padding: 55px 5%;
-  }
-
-  .hero-content h1 {
-    font-size: 36px;
-  }
-
-  .hero-image img {
-    height: 320px;
-  }
-
-  .services,
-  .why-us {
-    padding: 55px 5%;
-  }
-
-  .service-container,
-  .features {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-}
-
-/* Mobile Responsive Design */
-@media (max-width: 600px) {
-  .hero {
-    flex-direction: column;
-    align-items: stretch;
-    padding: 40px 5%;
-    gap: 30px;
-  }
-
-  .hero-content h1 {
-    font-size: 32px;
-  }
-
-  .hero-description {
-    font-size: 15px;
-  }
-
-  .hero-buttons {
-    gap: 12px;
-  }
-
-  .hero-image img {
-    height: 250px;
-  }
-
-  .hero-banner {
-    min-height: 280px;
-    padding: 40px 5%;
-  }
-
-  .banner-overlay h2 {
-    font-size: 26px;
-  }
-
-  .services,
-  .why-us {
-    padding: 45px 5%;
-  }
-
-  .section-heading h2 {
-    font-size: 28px;
-  }
-
-  .service-container,
-  .features {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
-
-  .service-card img {
-    height: 220px;
-  }
-
-  .home-cta {
-    padding: 45px 5%;
-  }
-
-  .home-cta h2 {
-    font-size: 28px;
-  }
-}
-
-/* Small Mobile Screens */
-@media (max-width: 380px) {
-  .hero-content h1 {
-    font-size: 28px;
-  }
-
-  .hero-buttons {
-    flex-direction: column;
-    align-items: stretch;
-  }
-
-  .banner-overlay h2 {
-    font-size: 23px;
-  }
-
-  .section-heading h2 {
-    font-size: 25px;
-  }
-}
+export default Home;

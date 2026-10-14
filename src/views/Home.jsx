@@ -1,190 +1,299 @@
-
-import Button from "../component/Button/button";
+import { Link } from "react-router-dom";
+import Button from "../component/Button/Button";
 import "./Home.css";
 
 function Home() {
   return (
-    <div className="home">
+    <div className="home-page">
 
-      {/* Hero Section */}
-      <section className="hero">
-        <div className="hero-content">
-          <p className="hero-tag">
+      {/* ================= HERO SECTION ================= */}
+
+      <section className="home-hero">
+
+        <div className="home-content">
+
+          <span className="home-tag">
             SMART FARMING, BETTER FUTURE
-          </p>
+          </span>
 
           <h1>
             Your Farm,
             <br />
-            Your Future with <span>FarmConnect</span>
+            Your People,
+            <br />
+            <span>Your Success.</span>
           </h1>
 
-          <p className="hero-description">
-            Find farm workers, rent agricultural equipment,
-            and book transportation services in one place.
-            Make farming easier and save your valuable time.
+          <p>
+            FarmConnect connects farmers with agricultural workers,
+            equipment rentals, and transportation services.
+            Everything you need for your farm, in one place.
           </p>
 
-          <div className="hero-buttons">
-            <Button to="/workers" variant="primary">
-              Find Workers
-            </Button>
+          <div className="home-buttons">
 
-            <Button to="/equipment" variant="secondary">
-              Explore Equipment
-            </Button>
+            <Link to="/workers">
+              <Button text="Find Workers" />
+            </Link>
+
+            <Link to="/equipment">
+              <Button
+                text="Explore Equipment"
+                variant="secondary"
+              />
+            </Link>
+
           </div>
+
+          {/* Statistics */}
+
+          <div className="home-stats">
+
+            <div>
+              <h3>3-in-1</h3>
+              <p>Farm Services</p>
+            </div>
+
+            <div>
+              <h3>Easy</h3>
+              <p>Booking Process</p>
+            </div>
+
+            <div>
+              <h3>24/7</h3>
+              <p>Online Access</p>
+            </div>
+
+          </div>
+
         </div>
 
-        <div className="hero-image">
+        {/* Hero Image */}
+
+        <div className="home-image">
+
           <img
-            src="/images/farmer-field.jpg"
-            alt="Farmer working in an agricultural field"
+            src="/images/farming.png"
+            alt="Farmer working in a green agricultural field"
           />
+
+          <div className="image-badge">
+            <span className="badge-icon">✓</span>
+
+            <div>
+              <h4>Farm Made Easy</h4>
+              <p>Everything in one place</p>
+            </div>
+          </div>
+
         </div>
+
       </section>
 
-      {/* Hero Banner */}
-      <section className="hero-banner">
-        <img
-          className="banner-image"
-          src="/images/farmer-field.jpg"
-          alt="Farmer working in a field"
-        />
 
-        <div className="banner-overlay">
-          <p>GROW SMARTER</p>
+      {/* ================= SERVICES SECTION ================= */}
+
+      <section className="home-services">
+
+        <div className="section-heading">
+
+          <span className="section-tag">
+            OUR SERVICES
+          </span>
 
           <h2>
-            Reliable farming support from field to market.
+            Everything Your Farm Needs
           </h2>
 
-          <Button to="/register" variant="success">
-            Join FarmConnect
-          </Button>
+          <p>
+            Find the right people, equipment, and transportation
+            to make your farming work easier.
+          </p>
+
         </div>
+
+
+        <div className="service-grid">
+
+          {/* Workers Card */}
+
+          <div className="service-card">
+
+            <div className="service-icon worker-bg">
+              <img
+                src="/images/worker-icon.png"
+                alt="Agricultural worker"
+              />
+            </div>
+
+            <h3>Find Farm Workers</h3>
+
+            <p>
+              Connect with agricultural workers for harvesting,
+              planting, irrigation, and other farm activities.
+            </p>
+
+            <Link to="/workers" className="service-link">
+              Find Workers <span>→</span>
+            </Link>
+
+          </div>
+
+
+          {/* Equipment Card */}
+
+          <div className="service-card">
+
+            <div className="service-icon equipment-bg">
+              <img
+                src="/images/equipment-icon.png"
+                alt="Agricultural equipment"
+              />
+            </div>
+
+            <h3>Rent Equipment</h3>
+
+            <p>
+              Find tractors, harvesters, and other agricultural
+              equipment according to your farming needs.
+            </p>
+
+            <Link to="/equipment" className="service-link">
+              Explore Equipment <span>→</span>
+            </Link>
+
+          </div>
+
+
+          {/* Transportation Card */}
+
+          <div className="service-card">
+
+            <div className="service-icon transport-bg">
+              <img
+                src="/images/transport-icon.png"
+                alt="Farm transportation truck"
+              />
+            </div>
+
+            <h3>Book Transportation</h3>
+
+            <p>
+              Arrange transportation to move crops, seeds,
+              fertilizers, and agricultural products.
+            </p>
+
+            <Link to="/transport" className="service-link">
+              Book Transport <span>→</span>
+            </Link>
+
+          </div>
+
+        </div>
+
       </section>
 
-      {/* Services Section */}
-      <section className="services">
+
+      {/* ================= HOW IT WORKS ================= */}
+
+      <section className="home-how">
+
         <div className="section-heading">
-          <p>WHAT WE OFFER</p>
-          <h2>Our Farming Services</h2>
-          <span>
-            Everything you need to manage your farm easily.
+
+          <span className="section-tag">
+            SIMPLE PROCESS
           </span>
+
+          <h2>
+            How FarmConnect Works
+          </h2>
+
+          <p>
+            Get started in three simple steps.
+          </p>
+
         </div>
 
-        <div className="service-container">
 
-          {/* Workers */}
-          <div className="service-card">
-            <img
-              src="https://images.unsplash.com/photo-1523741543316-beb7fc7023d8?auto=format&fit=crop&w=800&q=80"
-              alt="Agricultural field"
-            />
+        <div className="steps-grid">
 
-            <h3>Farm Workers</h3>
+          <div className="step-card">
+
+            <div className="step-number">01</div>
+
+            <h3>Choose a Service</h3>
 
             <p>
-              Find workers for planting, harvesting,
-              and other farming activities.
+              Select workers, agricultural equipment,
+              or transportation for your farm.
             </p>
 
-            <Button to="/workers" variant="primary">
-              Find Workers →
-            </Button>
           </div>
 
-          {/* Equipment */}
-          <div className="service-card">
-            <img
-              src="https://images.unsplash.com/photo-1500937386664-56d1dfef3854?auto=format&fit=crop&w=800&q=80"
-              alt="Farm and agricultural equipment"
-            />
 
-            <h3>Farm Equipment</h3>
+          <div className="step-card">
+
+            <div className="step-number">02</div>
+
+            <h3>Find What You Need</h3>
 
             <p>
-              Rent tractors and farming equipment
-              according to your needs.
+              Browse available services and choose
+              an option suitable for your requirements.
             </p>
 
-            <Button to="/equipment" variant="primary">
-              Rent Equipment →
-            </Button>
           </div>
 
-          {/* Transportation */}
-          <div className="service-card">
-            <img
-              src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=800&q=80"
-              alt="Transportation and logistics"
-            />
 
-            <h3>Transportation</h3>
+          <div className="step-card">
+
+            <div className="step-number">03</div>
+
+            <h3>Make a Booking</h3>
 
             <p>
-              Book transport to move your crops
-              from farms to markets.
+              Submit your booking request and manage
+              your selected services from one place.
             </p>
 
-            <Button to="/transport" variant="primary">
-              Book Transport →
-            </Button>
           </div>
 
         </div>
+
       </section>
 
-      {/* Why Choose Us */}
-      <section className="why-us">
-        <div className="section-heading">
-          <p>WHY FARMCONNECT?</p>
-          <h2>Making Farming Simpler</h2>
-        </div>
 
-        <div className="features">
+      {/* ================= CALL TO ACTION ================= */}
 
-          <div className="feature-card">
-            <span>👨‍🌾</span>
-            <h3>Easy to Use</h3>
-            <p>
-              Find the services you need through one platform.
-            </p>
-          </div>
-
-          <div className="feature-card">
-            <span>⏱️</span>
-            <h3>Save Time</h3>
-            <p>
-              Reduce the time spent searching for farm services.
-            </p>
-          </div>
-
-          <div className="feature-card">
-            <span>🤝</span>
-            <h3>Connect Easily</h3>
-            <p>
-              Connect with workers and farming service providers.
-            </p>
-          </div>
-
-        </div>
-      </section>
-
-      {/* Call to Action */}
       <section className="home-cta">
-        <h2>Let's Grow Together!</h2>
 
-        <p>
-          Start using FarmConnect to find the right services
-          for your agricultural needs.
-        </p>
+        <div className="cta-content">
 
-        <Button to="/register" variant="success">
-          Get Started →
-        </Button>
+          <span className="cta-tag">
+            GROW WITH FARMCONNECT
+          </span>
+
+          <h2>
+            Make Farming Easier.
+            <br />
+            Grow Your Future.
+          </h2>
+
+          <p>
+            Start exploring agricultural services and find
+            the support your farm needs.
+          </p>
+
+        </div>
+
+        <div className="cta-button">
+
+          <Link to="/workers">
+            <Button text="Get Started" />
+          </Link>
+
+        </div>
+
       </section>
 
     </div>
