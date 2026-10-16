@@ -35,16 +35,32 @@
 /* Hero */
 
 .hero {
+  position: relative;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
   gap: 45px;
+  min-height: calc(100svh - 80px);
+  box-sizing: border-box;
   padding: 75px 8%;
-  background: #f4f8f2;
+  overflow: hidden;
+  background: #1b4332;
+}
+
+.hero::before {
+  position: absolute;
+  z-index: 1;
+  inset: 0;
+  content: "";
+  background: linear-gradient(90deg, rgb(15 35 22 / 82%), rgb(15 35 22 / 48%) 62%, rgb(15 35 22 / 20%));
 }
 
 .hero-content {
+  position: relative;
+  z-index: 2;
   flex: 1;
+  max-width: 720px;
+  color: #ffffff;
 }
 
 .hero-tag {
@@ -62,11 +78,11 @@
 
 .hero-content h1 span {
   display: block;
-  color: #21864a;
+  color: #a8e6a3;
 }
 
 .hero-description {
-  color: #526357;
+  color: #f1f5f2;
   font-size: 16px;
   line-height: 1.8;
   max-width: 550px;
@@ -85,21 +101,22 @@
   flex-wrap: wrap;
   gap: 18px;
   margin-top: 25px;
-  color: #21864a;
+  color: #ffffff;
   font-size: 13px;
   font-weight: bold;
 }
 
 .hero-image {
-  flex: 1;
+  position: absolute;
+  z-index: 0;
+  inset: 0;
 }
 
 .hero-image img {
+  display: block;
   width: 100%;
-  max-width: 520px;
-  height: 380px;
+  height: 100%;
   object-fit: cover;
-  border-radius: 18px;
 }
 
 /* Introduction */
@@ -142,10 +159,15 @@
 }
 
 .service-card img {
+  display: block;
   width: 100%;
-  height: 175px;
-  object-fit: contain;
+  aspect-ratio: 16 / 10;
+  height: auto;
+  object-fit: cover;
   margin-bottom: 15px;
+  box-sizing: border-box;
+  border: 1px solid #e5eee5;
+  border-radius: 10px;
 }
 
 .service-card h3 {
@@ -288,7 +310,6 @@
     font-size: 34px;
   }
 
-  .hero-image img,
   .benefits-image img {
     height: 260px;
   }
