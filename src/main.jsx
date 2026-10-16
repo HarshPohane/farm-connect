@@ -3,7 +3,7 @@ import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Navbar from "./component/Navbar";
-
+import Footer from "./component/Footer";
 import Home from "./views/Home";
 import Workers from "./views/Worker";
 import Equipment from "./views/Equiement";
@@ -26,6 +26,8 @@ function Main() {
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
       </Routes>
+
+      <Footer />
     </BrowserRouter>
   );
 }
