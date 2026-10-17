@@ -38,7 +38,7 @@
   margin: 0;
   color: #ffffff;
   font-size: 25px;
-  font-weight: 800;
+  font-weight: 400;
 }
 
 .footer-logo h2 span {
@@ -240,6 +240,8 @@
   padding: 45px 7% 20px;
   font-family: Arial, sans-serif;
   box-sizing: border-box;
+  width: 100%;
+  flex-shrink: 0;
 }
 
 .footer * {
@@ -249,10 +251,15 @@
 /* Main Layout */
 .footer-container {
   display: grid;
-  grid-template-columns: 1.5fr 1fr 1.5fr;
-  gap: 45px;
+  grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr) minmax(0, 1.5fr);
+  gap: clamp(24px, 4vw, 45px);
   max-width: 1250px;
   margin: 0 auto;
+}
+
+.footer-brand,
+.footer-column {
+  min-width: 0;
 }
 
 /* Brand and Logo */
@@ -274,7 +281,7 @@
   margin: 0;
   color: #1b4332;
   font-size: 25px;
-  font-weight: 800;
+  font-weight: 400;
 }
 
 .footer-logo h2 span {
@@ -402,7 +409,7 @@
 /* Tablet */
 @media (max-width: 900px) {
   .footer-container {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 35px;
   }
 
@@ -414,7 +421,7 @@
 /* Mobile */
 @media (max-width: 550px) {
   .footer {
-    padding: 35px 22px 18px;
+    padding: 35px clamp(16px, 5vw, 22px) 18px;
   }
 
   .footer-container {

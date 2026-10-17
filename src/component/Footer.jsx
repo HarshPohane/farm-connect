@@ -1,5 +1,9 @@
 import { Link } from "react-router-dom";
 import logo from "./icon-images/connect.png";
+import instagram from "./icon-images/instagram.png";
+import locationPin from "./icon-images/location-pin.png";
+import mobile from "./icon-images/mobile.png";
+import mail from "./icon-images/mail.png";
 import "./Footer.css";
 
 function Footer() {
@@ -17,7 +21,7 @@ function Footer() {
             />
 
             <h2>
-              Farm<span>Connect</span>
+              Farm-<span>Connect</span>
             </h2>
           </Link>
 
@@ -34,10 +38,7 @@ function Footer() {
               rel="noreferrer"
               aria-label="Instagram"
             >
-              <img
-                src="/images/instagram.png"
-                alt="Instagram"
-              />
+              <img src={instagram} alt="Instagram" />
             </a>
           </div>
         </div>
@@ -59,26 +60,26 @@ function Footer() {
           <h3>Contact Us</h3>
 
           <div className="contact-item">
-            <img src="/images/location.png" alt="Location" />
+            <img src={locationPin} alt="Location" />
             <span>Nagpur, Maharashtra, India</span>
           </div>
 
           <div className="contact-item">
-            <img src="/images/phone.png" alt="Phone" />
+            <img src={mobile} alt="Phone" />
             <a href="tel:+917744006306">
               +91 7744006306
             </a>
           </div>
 
           <div className="contact-item">
-            <img src="/images/email.png" alt="Email" />
+            <img src={mail} alt="Email" />
             <a href="mailto:harshpohane4@gmail.com">
               harshpohane4@gmail.com
             </a>
           </div>
 
           <div className="contact-item">
-            <img src="/images/instagram.png" alt="Instagram" />
+            <img src={instagram} alt="Instagram" />
             <a
               href="https://www.instagram.com/YOUR_INSTAGRAM_ID/"
               target="_blank"
@@ -96,10 +97,6 @@ function Footer() {
         <p>
           © {new Date().getFullYear()} FarmConnect.
           All rights reserved.
-        </p>
-
-        <p className="footer-tagline">
-          Growing Together, Farming Smarter.
         </p>
       </div>
 
