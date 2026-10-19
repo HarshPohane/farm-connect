@@ -1,0 +1,57 @@
+
+[
+  {
+    "id": 1,
+    "name": "Ramesh Patil",
+    "skill": "Ploughing",
+    "location": "Nagpur",
+    "wage": 600,
+    "experience": "5 Years",
+    "image": "/images/worker.png"
+  },
+  {
+    "id": 2,
+    "name": "Suresh Kumar",
+    "skill": "Harvesting",
+    "location": "Wardha",
+    "wage": 700,
+    "experience": "7 Years",
+    "image": "/images/worker.png"
+  },
+  {
+    "id": 3,
+    "name": "Amit Sharma",
+    "skill": "Planting",
+    "location": "Nagpur",
+    "wage": 500,
+    "experience": "3 Years",
+    "image": "/images/worker.png"
+  },
+  {
+    "id": 4,
+    "name": "Rajesh Thakre",
+    "skill": "Irrigation",
+    "location": "Amravati",
+    "wage": 650,
+    "experience": "6 Years",
+    "image": "/images/worker.png"
+  },
+  {
+    "id": 5,
+    "name": "Vijay More",
+    "skill": "Harvesting",
+    "location": "Pune",
+    "wage": 750,
+    "experience": "8 Years",
+    "image": "/images/worker.png"
+  },
+  {
+    "id": 6,
+    "name": "Sunil Wankhede",
+    "skill": "Ploughing",
+    "location": "Nagpur",
+    "wage": 600,
+    "experience": "4 Years",
+    "image": "/images/worker.png"
+  }
+]
