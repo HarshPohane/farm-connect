@@ -1,0 +1,103 @@
+/* Worker Card */
+.worker-card {
+  overflow: hidden;
+  background-color: #ffffff;
+  border: 1px solid #e2ebe3;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.worker-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Worker Image */
+.worker-card-image {
+  height: 190px;
+  background-color: #eaf5eb;
+}
+
+.worker-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Card Content */
+.worker-card-content {
+  padding: 20px;
+}
+
+.worker-skill {
+  display: inline-block;
+  padding: 6px 10px;
+  background-color: #e7f6eb;
+  color: #1b5e20;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+.worker-card-content h3 {
+  margin: 14px 0;
+  color: #1a2e22;
+  font-size: 19px;
+}
+
+/* Worker Details */
+.worker-detail {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin: 12px 0;
+}
+
+.worker-detail img {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+}
+
+.worker-detail span {
+  color: #647568;
+  font-size: 13px;
+}
+
+/* Wage and Contact Button */
+.worker-card-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  border-top: 1px solid #e5eee5;
+  margin-top: 18px;
+  padding-top: 16px;
+}
+
+.worker-wage h4 {
+  margin: 0;
+  color: #1b5e20;
+  font-size: 21px;
+}
+
+.worker-wage span {
+  display: block;
+  margin-top: 5px;
+  color: #647568;
+  font-size: 12px;
+}
+
+.worker-book-btn {
+  display: inline-block;
+  padding: 10px 16px;
+  background-color: #f97316;
+  color: #ffffff;
+  border-radius: 5px;
+  font-size: 13px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.worker-book-btn:hover {
+  background-color: #1b5e20;
+}
