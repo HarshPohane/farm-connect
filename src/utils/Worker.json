@@ -7,16 +7,16 @@
     "location": "Nagpur",
     "wage": 600,
     "experience": "5 Years",
-    "image": "/images/worker.png"
+    "image": "https://imgs.search.brave.com/k3ECWA9H8NttVo4Z24tVEyIS24-rwqP5MF_j_b133yE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/bWFnbmlmaWMuY29t/L3ByZW1pdW0tcGhv/dG8vaW5kaWFuLWZh/cm1lci1jb3R0b24t/ZmllbGRfNTQzOTEt/MjIwNi5qcGc_c2Vt/dD1haXNfdGVzdF9i/Jnc9NzQwJnE9ODA"
   },
   {
     "id": 2,
     "name": "Suresh Kumar",
     "skill": "Harvesting",
-    "location": "Wardha",
+    "location": "Bhandara",
     "wage": 700,
     "experience": "7 Years",
-    "image": "/images/worker.png"
+    "image": "https://imgs.search.brave.com/J_HOo4C1xyVWBaiZ5EWN4AX9jTH9HvURWwMapf105MY/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wMjYv/NTM3LzcxMi9zbWFs/bC9pbmRpYW4taGFw/cHktZmFybWVyLWhv/bGRpbmctZW1wdHkt/Ym90dGxlLWluLWhh/bmRzLWhhcHB5LWZh/cm1lci1zaG93aW5n/LXdoaXRlLWJvdHRs/ZS1waG90by5qcGc"
   },
   {
     "id": 3,
@@ -25,7 +25,7 @@
     "location": "Nagpur",
     "wage": 500,
     "experience": "3 Years",
-    "image": "/images/worker.png"
+    "image": "https://imgs.search.brave.com/8PWTNyL5x9uozdPVJhWoe9QaKAfK77bNz6Yvgivz4BI/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMjIw/NzE2ODE5NC92aWRl/by9ydXJhbC1pbmRp/YW4tZmFybWVyLXR1/cmJhbi1jYXJyeWlu/Zy1hLWhvZS1vbi1z/aG91bGRlci1hbmQt/dXNpbmctc21hcnRw/aG9uZS1pbi1hZ3Jp/Y3VsdHVyZS5qcGc_/cz02NDB4NjQwJms9/MjAmYz02Z3lUeXlu/VE9xLU9CdVgtQV9j/YkpoZmN2bF9wNWdn/bnZ6LUdHWnFoVEtj/PQ"
   },
   {
     "id": 4,
@@ -34,7 +34,7 @@
     "location": "Amravati",
     "wage": 650,
     "experience": "6 Years",
-    "image": "/images/worker.png"
+    "image": "https://imgs.search.brave.com/dNeUMJcnm8swz_FuiQ1Oc8FPDQbvvG2koDZsMMq2KD4/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMjE0/ODc4Mzg0NS92aWRl/by9oYXBweS1pbmRp/YW4tZmFybWVyLXdv/cmtpbmctaW4tYWdy/aWN1bHR1cmUtZmll/bGQtaGFydmVzdGlu/Zy1tYW4td2Fsa2lu/Zy1ob2xkaW5nLWNy/b3Atb3JnYW5pYy5q/cGc_cz02NDB4NjQw/Jms9MjAmYz1UUk5G/UnVPdm1nYkNBblRt/NENDRHpfLTI5bjMt/alhaaWVtTUJfLVZa/ak1JPQ"
   },
   {
     "id": 5,
@@ -43,7 +43,7 @@
     "location": "Pune",
     "wage": 750,
     "experience": "8 Years",
-    "image": "/images/worker.png"
+    "image": "https://imgs.search.brave.com/Z3r4_wXlTx3p2DroVduP1Kafa6crkdkLkHRnNTmeSWY/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzAzLzc4LzE0Lzc2/LzM2MF9GXzM3ODE0/NzY5Ml85elV4MGxB/OE80bDdIN280V05y/eGxidXlLTVVhcVBI/cS5qcGc"
   },
   {
     "id": 6,
@@ -52,6 +52,27 @@
     "location": "Nagpur",
     "wage": 600,
     "experience": "4 Years",
-    "image": "/images/worker.png"
+    "image": "https://imgs.search.brave.com/uX0ppQ7LINdGzQqaOseMIo0opJkZ1dNsd5VnZnMXv1Y/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pbWcu/bWFnbmlmaWMuY29t/L3ByZW1pdW0tcGhv/dG8vc21pbGluZy1p/bmRpYW4tZmFybWVy/LXBvc2luZy1sdXNo/LWdyZWVuLWFncmlj/dWx0dXJhbC1maWVs/ZF84MjI3ODItMTEz/Ny5qcGc_c2VtdD1h/aXNfdGVzdF9iJnc9/NzQwJnE9ODA"
+  },
+  
+  {
+  "id": 6,
+    "name": "Sunil Wankhede",
+    "skill": "Pesticide Spraying",
+    "location": "Wardha",
+    "wage": 600,
+    "experience": "4 Years",
+    "image": "https://imgs.search.brave.com/jpn8F9SdQgOUkakEKYjHPhWTolR7uoP47q3i_5Bkdso/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTI5/NjI4MTI3My92aWRl/by9pbmRpYW4tZmFy/bWVyLXNwcmVhZGlu/Zy1mZXJ0aWxpemVy/LWluLXRoZS1ncmVl/bi1jb3R0b24tZmll/bGQuanBnP3M9NjQw/eDY0MCZrPTIwJmM9/cGE1YVFHalJZN004/aEFEYkJvemdXZDRy/bWpHR0xkVnNaZWpX/UlFVQTkzaz0"
+  },
+
+  {
+  "id": 6,
+    "name": "Anil Ambekar",
+    "skill": "Fertilizer spreading",
+    "location": "Satara",
+    "wage": 600,
+    "experience": "4 Years",
+    "image":"https://imgs.search.brave.com/B5QveMD0hBZJfOVO5SC4BHbMu-R9fSSg3dtjG4V-f5E/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90aHVt/YnMuZHJlYW1zdGlt/ZS5jb20vYi9pbmRp/YW4tZmFybWVyLXNw/cmVhZGluZy1mZXJ0/aWxpemVyLXdoZWF0/LWZpZWxkLTIwODA5/MzQ0My5qcGc"
   }
+
 ]

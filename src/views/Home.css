@@ -5,7 +5,6 @@
   font-family: Arial, sans-serif;
 }
 
-/* Common styles */
 
 .section-tag {
   color: #f97316;
@@ -31,8 +30,6 @@
   color: #526357;
   line-height: 1.8;
 }
-
-/* Hero */
 
 .hero {
   position: relative;
@@ -119,8 +116,6 @@
   object-fit: cover;
 }
 
-/* Introduction */
-
 .intro-section {
   padding: 65px 12%;
   text-align: center;
@@ -135,8 +130,6 @@
   max-width: 850px;
   margin: 20px auto 0;
 }
-
-/* Services */
 
 .services-section,
 .how-section {
@@ -182,8 +175,6 @@
   margin-bottom: 22px;
 }
 
-/* How It Works */
-
 .how-section {
   background: #ffffff;
 }
@@ -215,8 +206,6 @@
   color: #526357;
   line-height: 1.7;
 }
-
-/* Benefits */
 
 .benefits-section {
   display: flex;
@@ -253,8 +242,6 @@
   padding-left: 5px;
 }
 
-/* Call to Action */
-
 .cta-section {
   padding: 65px 8%;
   background: #edf6eb;
@@ -274,8 +261,6 @@
 .cta-buttons {
   justify-content: center;
 }
-
-/* Responsive Design */
 
 @media (max-width: 900px) {
   .hero {
