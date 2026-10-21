@@ -145,7 +145,7 @@ function Home() {
         <div className="section-heading">
           <p className="section-tag">SIMPLE AND CONVENIENT</p>
           <h2>How FarmConnect Works</h2>
-          <p>Get started in just four simple steps.</p>
+          <p>Get started in just three simple steps.</p>
         </div>
 
         <div className="steps-grid">
@@ -163,14 +163,8 @@ function Home() {
 
           <div className="step-card">
             <span className="step-number">03</span>
-            <h3>Book Your Service</h3>
-            <p>Choose a suitable option and submit your booking.</p>
-          </div>
-
-          <div className="step-card">
-            <span className="step-number">04</span>
-            <h3>Get Your Work Done</h3>
-            <p>Coordinate your farming activities with the provider.</p>
+            <h3>Book and Get Started</h3>
+            <p>Submit your booking and coordinate with your provider.</p>
           </div>
         </div>
       </section>

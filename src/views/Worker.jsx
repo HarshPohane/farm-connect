@@ -1,6 +1,9 @@
 import { useState } from "react";
 import workersData from "../utils/Worker.json";
 import WorkerCard from "../component/Workercard.jsx";
+import searchIcon from "../component/icon-images/serach.png";
+import chooseIcon from "../component/icon-images/choose.png";
+import skillsIcon from "../component/icon-images/skills.png";
 import "./Worker.css";
 
 function Workers() {
@@ -43,7 +46,7 @@ function Workers() {
 
         <div className="workers-hero-image">
           <img
-            src="/images/workers-team.jpg"
+            src="https://imgs.search.brave.com/orC2y_atYi0IkLs3CBsw0AHjH-2n0yHgn-pXpRTWXdI/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMjE2/MDA3ODMxOS9waG90/by9jbG9zZS11cC1v/Zi1hLWxldHR1Y2Ut/c2VlZGxpbmctb24t/ZmFybWVyLWhhbmRz/LW9uLWNvbW11bml0/eS1nYXJkZW4uanBn/P3M9NjEyeDYxMiZ3/PTAmaz0yMCZjPWNa/QjE3N0kwZ2ZCQ3Bo/a0RQX1ZTVWFLVy1j/UHBNcUpHdHYtMzdQ/WDJ5UXM9"
             alt="Agricultural workers"
           />
         </div>
@@ -90,6 +93,8 @@ function Workers() {
             <option value="Harvesting">Harvesting</option>
             <option value="Planting">Planting</option>
             <option value="Irrigation">Irrigation</option>
+            <option value="Pesticide Spraying">Pesticide Spraying</option>
+            <option value="Fertilizer spreading">Fertilizer spreading</option>
           </select>
         </div>
 
@@ -103,6 +108,40 @@ function Workers() {
               No workers found. Try another search.
             </p>
           )}
+        </div>
+      </section>
+
+      <section className="workers-info">
+        <div className="workers-info-heading">
+          <span>HOW IT WORKS</span>
+          <h2>Hire Farm Workers in 3 Easy Steps</h2>
+          <p>Find the right people for your farming needs with FarmConnect.</p>
+        </div>
+
+        <div className="workers-info-grid">
+          <div className="workers-info-card">
+            <img src={searchIcon} alt="" />
+            <h3>1. Find Workers</h3>
+            <p>
+              Search for skilled workers by name, location or farming activity.
+            </p>
+          </div>
+
+          <div className="workers-info-card">
+            <img src={chooseIcon} alt="" />
+            <h3>2. Compare Skills</h3>
+            <p>
+              Check worker experience, skills and daily wages before choosing.
+            </p>
+          </div>
+
+          <div className="workers-info-card">
+            <img src={skillsIcon} alt="" />
+            <h3>3. Plan Your Work</h3>
+            <p>
+              Choose workers to match your farm requirements and schedule.
+            </p>
+          </div>
         </div>
       </section>
 

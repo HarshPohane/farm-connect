@@ -253,3 +253,81 @@
     grid-template-columns: 1fr;
   }
 }
+
+/* How FarmConnect Works */
+.workers-info {
+  padding: 45px 8%;
+  background-color: #ffffff;
+}
+
+.workers-info-heading {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.workers-info-heading span {
+  color: #d97706;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+}
+
+.workers-info-heading h2 {
+  color: #1b5e20;
+  font-size: 28px;
+  margin: 10px 0;
+}
+
+.workers-info-heading p {
+  color: #526357;
+  font-size: 15px;
+}
+
+.workers-info-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.workers-info-card {
+  text-align: center;
+  background-color: #f7faf7;
+  padding: 25px 20px;
+  border: 1px solid #e1ebe1;
+  border-radius: 12px;
+}
+
+.workers-info-card img {
+  width: 55px;
+  height: 55px;
+  object-fit: contain;
+  margin-bottom: 12px;
+}
+
+.workers-info-card h3 {
+  color: #1b5e20;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.workers-info-card p {
+  color: #526357;
+  font-size: 14px;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .workers-info {
+    padding: 35px 5%;
+  }
+
+  .workers-info-heading h2 {
+    font-size: 23px;
+  }
+
+  .workers-info-grid {
+    grid-template-columns: 1fr;
+  }
+}

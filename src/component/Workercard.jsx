@@ -1,4 +1,6 @@
 import { Link } from "react-router-dom";
+import experienceIcon from "./icon-images/experience.png";
+import locationIcon from "./icon-images/worker.loction.png";
 import "./Workercard.css";
 
 function WorkerCard({ worker }) {
@@ -15,12 +17,12 @@ function WorkerCard({ worker }) {
         <h3>{worker.name}</h3>
 
         <div className="worker-detail">
-          <img src="/images/location.png" alt="" />
+          <img src={locationIcon} alt="" />
           <span>{worker.location}</span>
         </div>
 
         <div className="worker-detail">
-          <img src="/images/experience.png" alt="" />
+          <img src={experienceIcon} alt="" />
           <span>{worker.experience} experience</span>
         </div>
 
