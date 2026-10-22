@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "name": "Mahindra 575 DI",
+    "category": "Tractors",
+    "location": "Nagpur",
+    "price": 1800,
+    "rating": 4.8,
+    "hours": "540 hours",
+    "image": "https://images.unsplash.com/photo-1592982537447-7440770cbfc9?auto=format&fit=crop&w=900&q=80"
+  },
+  {
+    "id": 2,
+    "name": "Case IH Harvester",
+    "category": "Harvesters",
+    "location": "Pune",
+    "price": 4200,
+    "rating": 4.9,
+    "hours": "310 hours",
+    "image": "https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=900&q=80"
+  },
+  {
+    "id": 3,
+    "name": "Power Tiller",
+    "category": "Cultivation",
+    "location": "Amravati",
+    "price": 1200,
+    "rating": 4.7,
+    "hours": "680 hours",
+    "image": "https://images.unsplash.com/photo-1530836173934-1d7e6bd7a9d8?auto=format&fit=crop&w=900&q=80"
+  },
+  {
+    "id": 4,
+    "name": "Seeder Machine",
+    "category": "Sowing",
+    "location": "Wardha",
+    "price": 1500,
+    "rating": 4.6,
+    "hours": "420 hours",
+    "image": "https://images.unsplash.com/photo-1500937386664-56d1dfef3854?auto=format&fit=crop&w=900&q=80"
+  },
+  {
+    "id": 5,
+    "name": "John Deere Tractor",
+    "category": "Tractors",
+    "location": "Bhandara",
+    "price": 2200,
+    "rating": 4.9,
+    "hours": "260 hours",
+    "image": "https://images.unsplash.com/photo-1516912481808-3406841bd33c?auto=format&fit=crop&w=900&q=80"
+  },
+  {
+    "id": 6,
+    "name": "Mini Combine Harvester",
+    "category": "Harvesters",
+    "location": "Satara",
+    "price": 3900,
+    "rating": 4.8,
+    "hours": "355 hours",
+    "image": "https://images.unsplash.com/photo-1464226184884-fa52ac221b7a?auto=format&fit=crop&w=900&q=80"
+  }
+]

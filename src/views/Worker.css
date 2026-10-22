@@ -295,7 +295,16 @@
   padding: 25px 20px;
   border: 1px solid #e1ebe1;
   border-radius: 12px;
+
+  transition: all 0.4s ease;
 }
+
+.workers-info-card:hover {
+  border: 1px solid #1b5e20;
+  background-color: #ffffff;
+  transform: translateY(-5px);
+}
+
 
 .workers-info-card img {
   width: 55px;
@@ -317,7 +326,7 @@
   margin: 0;
 }
 
-/* Responsive Design */
+
 @media (max-width: 768px) {
   .workers-info {
     padding: 35px 5%;
