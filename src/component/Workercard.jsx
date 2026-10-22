@@ -32,8 +32,8 @@ function WorkerCard({ worker }) {
             <span>per day</span>
           </div>
 
-          <Link to="/contact" className="worker-book-btn">
-            Contact
+          <Link to="/Bookings" className="worker-book-btn">
+            Book Now
           </Link>
         </div>
       </div>
