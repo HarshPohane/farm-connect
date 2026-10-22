@@ -1,0 +1,397 @@
+
+.equipment-page {
+  background-color: #f7faf7;
+  color: #1a2e22;
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+}
+
+.equipment-page * {
+  box-sizing: border-box;
+}
+
+/* Hero Section */
+.equipment-hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 65px 8%;
+  background: linear-gradient(120deg, #e8f5e9, #f8fbf5);
+}
+
+.equipment-hero-content {
+  flex: 1;
+}
+
+.equipment-tag,
+.equipment-small-title {
+  color: #d97706;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+}
+
+.equipment-hero h1 {
+  max-width: 600px;
+  margin: 20px 0;
+  font-size: clamp(32px, 4vw, 48px);
+  line-height: 1.2;
+}
+
+.equipment-hero h1 span {
+  display: block;
+  color: #1b5e20;
+}
+
+.equipment-hero-content > p {
+  max-width: 520px;
+  color: #526357;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.equipment-hero-btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 14px 23px;
+  border-radius: 8px;
+  background-color: #1b5e20;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 700;
+  transition: background-color 0.3s ease;
+}
+
+.equipment-hero-btn:hover {
+  background-color: #10a66a;
+}
+
+.equipment-hero-points {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 25px;
+  color: #1b5e20;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.equipment-hero-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  min-width: 0;
+}
+
+.equipment-hero-image img {
+  width: 100%;
+  max-width: 440px;
+  max-height: 330px;
+  object-fit: contain;
+}
+
+/* Benefits Section */
+.equipment-benefits {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 35px;
+  padding: 40px 8%;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e1ebe1;
+}
+
+.equipment-benefits > div {
+  padding: 8px 15px;
+  border-left: 3px solid #10b981;
+  transition: border-color 0.3s ease, padding-left 0.3s ease;
+}
+
+.equipment-benefits > div:hover {
+  padding-left: 22px;
+  border-color: #d97706;
+}
+
+.benefit-number {
+  color: #d97706;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.equipment-benefits h3 {
+  margin: 10px 0;
+  font-size: 19px;
+}
+
+.equipment-benefits p {
+  margin: 0;
+  color: #647067;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+/* Equipment Listing */
+.equipment-list-section {
+  padding: 65px 8%;
+  scroll-margin-top: 25px;
+}
+
+.equipment-heading {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.equipment-heading h2 {
+  margin: 12px 0;
+  font-size: clamp(25px, 3vw, 34px);
+}
+
+.equipment-heading p {
+  margin: 0;
+  color: #647067;
+  line-height: 1.7;
+}
+
+.equipment-count {
+  flex-shrink: 0;
+  padding: 9px 13px;
+  border-radius: 7px;
+  background-color: #e8f5e9;
+  color: #1b5e20;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+/* Search and Sorting */
+.equipment-toolbar {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 22px;
+}
+
+.equipment-search {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  gap: 10px;
+  min-width: 0;
+  padding: 0 16px;
+  border: 1px solid #dce7dc;
+  border-radius: 9px;
+  background-color: #ffffff;
+}
+
+.equipment-search:focus-within {
+  border-color: #10b981;
+}
+
+.equipment-search > span {
+  color: #1b5e20;
+  font-size: 27px;
+}
+
+.equipment-search input {
+  width: 100%;
+  min-width: 0;
+  padding: 15px 0;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #1a2e22;
+  font-size: 14px;
+}
+
+.equipment-sort {
+  width: 205px;
+  padding: 14px;
+  border: 1px solid #dce7dc;
+  border-radius: 9px;
+  background-color: #ffffff;
+  color: #1a2e22;
+  cursor: pointer;
+}
+
+/* Category Filters */
+.equipment-categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 28px;
+}
+
+.equipment-filter {
+  padding: 10px 17px;
+  border: 1px solid #dce7dc;
+  border-radius: 25px;
+  background-color: #ffffff;
+  color: #526357;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.equipment-filter:hover,
+.equipment-filter.active {
+  border-color: #1b5e20;
+  background-color: #1b5e20;
+  color: #ffffff;
+}
+
+/* Empty Search Results */
+.equipment-empty {
+  padding: 55px 20px;
+  border: 1px dashed #c9d8c9;
+  border-radius: 12px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.equipment-empty h3 {
+  margin: 0 0 10px;
+}
+
+.equipment-empty p {
+  color: #647067;
+  line-height: 1.6;
+}
+
+.equipment-empty button {
+  margin-top: 10px;
+  padding: 11px 18px;
+  border: none;
+  border-radius: 7px;
+  background-color: #1b5e20;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+/* Owner Call to Action */
+.equipment-help {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+  margin: 0 8% 60px;
+  padding: 35px;
+  border-radius: 14px;
+  background-color: #1a2e22;
+  color: #ffffff;
+}
+
+.equipment-help > div > span {
+  color: #fbbf24;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.equipment-help h2 {
+  margin: 12px 0;
+  font-size: 25px;
+}
+
+.equipment-help p {
+  margin: 0;
+  color: #d3dfd4;
+  line-height: 1.7;
+}
+
+.equipment-help-btn {
+  flex-shrink: 0;
+  padding: 14px 18px;
+  border-radius: 8px;
+  background-color: #d97706;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+  transition: background-color 0.3s ease;
+}
+
+.equipment-help-btn:hover {
+  background-color: #b96305;
+}
+
+/* Tablet */
+@media (max-width: 850px) {
+  .equipment-hero {
+    padding: 50px 5%;
+    gap: 20px;
+  }
+
+  .equipment-benefits {
+    gap: 15px;
+    padding: 35px 5%;
+  }
+
+  .equipment-list-section {
+    padding: 50px 5%;
+  }
+
+  .equipment-help {
+    margin-right: 5%;
+    margin-left: 5%;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .equipment-hero {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 40px 6%;
+  }
+
+  .equipment-hero-image {
+    width: 100%;
+  }
+
+  .equipment-hero-image img {
+    max-height: 240px;
+  }
+
+  .equipment-hero-points {
+    gap: 12px;
+  }
+
+  .equipment-benefits {
+    grid-template-columns: 1fr;
+    gap: 25px;
+    padding: 30px 6%;
+  }
+
+  .equipment-list-section {
+    padding: 40px 5%;
+  }
+
+  .equipment-heading {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .equipment-toolbar {
+    flex-direction: column;
+  }
+
+  .equipment-search,
+  .equipment-sort {
+    width: 100%;
+  }
+
+  .equipment-help {
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 0 5% 35px;
+    padding: 25px;
+  }
+
+  .equipment-help h2 {
+    font-size: 22px;
+  }
+}

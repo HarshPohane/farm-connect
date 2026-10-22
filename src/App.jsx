@@ -4,7 +4,7 @@ import Navbar from "./component/Navbar";
 import Footer from "./component/Footer";
 import Home from "./views/Home";
 import Workers from "./views/Worker";
-import Equipment from "./views/Equiement";
+import Equipment from "./views/Equipement";
 import Transport from "./views/Transport";
 import Bookings from "./views/Booking";
 import Login from "./views/Login";

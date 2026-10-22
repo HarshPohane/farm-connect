@@ -1,42 +1,51 @@
-import { Link } from "react-router-dom";
+
 import "./Equipmentcard.css";
 
-function EquipmentCard({ equipment }) {
+function EquipmentCard({ equipment, onBook }) {
   return (
-    <article className="equipment-card">
-      <div className="equipment-card-image">
-        <img src={equipment.image} alt={equipment.name} />
+    <article className="equipment-item">
+      <div className="equipment-image">
+        <img
+          src={equipment.image}
+          alt={equipment.name}
+          onError={(event) => {
+            event.currentTarget.style.visibility = "hidden";
+          }}
+        />
       </div>
 
-      <div className="equipment-card-content">
-        <span className="equipment-category">{equipment.category}</span>
+      <div className="equipment-details">
+        <span className="equipment-category">
+          {equipment.category}
+        </span>
+
         <h3>{equipment.name}</h3>
 
-        <div className="equipment-detail">
-          <span>📍</span>
-          <p>{equipment.location}</p>
+        <p className="equipment-description">
+          {equipment.description}
+        </p>
+
+        <div className="equipment-information">
+          <span>📍 {equipment.location}</span>
+          <span>⚙️ {equipment.power}</span>
+          <span className="equipment-available">
+            ● {equipment.availability}
+          </span>
         </div>
+      </div>
 
-        <div className="equipment-detail">
-          <span>⏱️</span>
-          <p>{equipment.hours}</p>
-        </div>
+      <div className="equipment-booking">
+        <p className="equipment-price">
+          ₹{equipment.price.toLocaleString("en-IN")}
+          <span> / {equipment.unit}</span>
+        </p>
 
-        <div className="equipment-card-bottom">
-          <div className="equipment-price">
-            <h4>₹{equipment.price}</h4>
-            <span>per day</span>
-          </div>
-
-          <div className="equipment-rating">
-            <span>★</span>
-            <strong>{equipment.rating}</strong>
-          </div>
-        </div>
-
-        <Link to="/bookings" className="equipment-book-btn">
-          Book Now
-        </Link>
+        <button
+          className="equipment-book-btn"
+          onClick={() => onBook(equipment)}
+        >
+          Book Equipment
+        </button>
       </div>
     </article>
   );

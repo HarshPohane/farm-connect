@@ -1,108 +1,182 @@
-.equipment-card {
-  background: #fff;
-  border: 1px solid #e2e8f0;
-  border-radius: 18px;
+
+.equipment-item {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 22px;
+  margin-bottom: 18px;
+  background-color: #ffffff;
+  border: 1px solid #e1ebe1;
+  border-radius: 14px;
+  transition: border-color 0.4s ease, transform 0.4s ease,
+    background-color 0.4s ease;
+}
+
+.equipment-item:hover {
+  border-color: #10b981;
+  background-color: #fbfefb;
+  transform: translateY(-3px);
+}
+
+.equipment-image {
+  width: 190px;
+  height: 150px;
+  flex-shrink: 0;
   overflow: hidden;
-  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  border-radius: 10px;
+  background-color: #f0f5ee;
 }
 
-.equipment-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 18px 32px rgba(15, 23, 42, 0.12);
-}
-
-.equipment-card-image {
-  height: 220px;
-  overflow: hidden;
-}
-
-.equipment-card-image img {
+.equipment-image img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  display: block;
+  object-fit: contain;
+  padding: 8px;
+  transition: transform 0.5s ease;
 }
 
-.equipment-card-content {
-  padding: 20px;
+.equipment-item:hover .equipment-image img {
+  transform: scale(1.06);
+}
+
+.equipment-details {
+  flex: 1;
+  min-width: 0;
 }
 
 .equipment-category {
   display: inline-block;
-  background: #ecfdf5;
-  color: #166534;
-  border-radius: 999px;
-  padding: 5px 10px;
+  padding: 6px 11px;
+  color: #1b5e20;
+  background-color: #e8f5e9;
+  border-radius: 20px;
   font-size: 12px;
   font-weight: 700;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
 }
 
-.equipment-card h3 {
-  margin: 14px 0 16px;
-  color: #1f2937;
-  font-size: 22px;
+.equipment-details h3 {
+  margin: 12px 0 8px;
+  color: #1a2e22;
+  font-size: 21px;
 }
 
-.equipment-detail {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  color: #526357;
-  margin-bottom: 10px;
-}
-
-.equipment-detail p {
-  margin: 0;
+.equipment-description {
+  max-width: 500px;
+  margin: 0 0 15px;
+  color: #647067;
   font-size: 14px;
+  line-height: 1.7;
 }
 
-.equipment-card-bottom {
+.equipment-information {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-top: 20px;
-  gap: 16px;
+  flex-wrap: wrap;
+  gap: 10px 18px;
+  color: #526357;
+  font-size: 13px;
 }
 
-.equipment-price h4 {
-  margin: 0;
-  color: #0f172a;
-  font-size: 26px;
+.equipment-available {
+  color: #16803d;
+  font-weight: 700;
+}
+
+.equipment-booking {
+  min-width: 155px;
+  padding-left: 22px;
+  border-left: 1px solid #e1ebe1;
+  text-align: center;
+}
+
+.equipment-price {
+  margin: 0 0 16px;
+  color: #1b5e20;
+  font-size: 24px;
+  font-weight: 800;
 }
 
 .equipment-price span {
-  color: #64748b;
-  font-size: 12px;
-}
-
-.equipment-rating {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  background: #fff7ed;
-  color: #c2410c;
-  border-radius: 999px;
-  padding: 8px 12px;
+  color: #68766c;
   font-size: 13px;
-  font-weight: 700;
+  font-weight: 400;
 }
 
 .equipment-book-btn {
-  display: inline-block;
-  margin-top: 18px;
   width: 100%;
-  background: #1b5e20;
-  color: #fff;
-  border-radius: 10px;
-  padding: 12px 16px;
-  text-align: center;
-  text-decoration: none;
+  padding: 12px 15px;
+  border: none;
+  border-radius: 8px;
+  background-color: #1b5e20;
+  color: #ffffff;
+  font-size: 13px;
   font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .equipment-book-btn:hover {
-  background: #d97706;
+  background-color: #10a66a;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 850px) {
+  .equipment-item {
+    gap: 16px;
+    padding: 16px;
+  }
+
+  .equipment-image {
+    width: 140px;
+    height: 130px;
+  }
+
+  .equipment-booking {
+    min-width: 130px;
+    padding-left: 15px;
+  }
+
+  .equipment-price {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .equipment-item {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .equipment-image {
+    width: 100%;
+    height: 190px;
+  }
+
+  .equipment-details {
+    flex-basis: 100%;
+  }
+
+  .equipment-details h3 {
+    font-size: 19px;
+  }
+
+  .equipment-booking {
+    display: flex;
+    flex: 1 1 100%;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 15px 0 0;
+    border-left: none;
+    border-top: 1px solid #e1ebe1;
+    text-align: left;
+  }
+
+  .equipment-price {
+    margin: 0;
+    font-size: 21px;
+  }
+
+  .equipment-book-btn {
+    width: auto;
+  }
 }
