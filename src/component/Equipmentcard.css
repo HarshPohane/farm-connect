@@ -81,16 +81,15 @@
 }
 
 .equipment-booking {
-  min-width: 155px;
+  min-width: 140px;
   padding-left: 22px;
-  border-left: 1px solid #e1ebe1;
   text-align: center;
 }
 
 .equipment-price {
   margin: 0 0 16px;
   color: #1b5e20;
-  font-size: 24px;
+  font-size: 23px;
   font-weight: 800;
 }
 
@@ -125,8 +124,8 @@
   }
 
   .equipment-image {
-    width: 140px;
-    height: 130px;
+    width: 150px;
+    height: 140px;
   }
 
   .equipment-booking {
