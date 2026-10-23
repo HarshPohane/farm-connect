@@ -9,7 +9,7 @@
     "location": "Nagpur",
     "power": "45 HP",
     "availability": "Available",
-    "image": "/images/tractor.png",
+    "image": "https://imgs.search.brave.com/V5nV0HfupqN2GBHakNYvXtie7GJWzwUfDc88O8o48xw/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/Y212MzYwLmNvbS9f/bmV4dC9pbWFnZT91/cmw9aHR0cHM6Ly9z/My5hcC1zb3V0aGVh/c3QtMS5hbWF6b25h/d3MuY29tL2RlbGVu/L3VwbG9hZHMvMzg2/MjhmMDMtYzQ3YS00/MzUzLWE1NTItMmVj/YWY3NDMzOTEwLXNt/YWxsLU5ldyUyMFBy/b2plY3QlMjAlMjgz/JTI5LndlYnAmdz0z/ODQwJnE9NzU",
     "description": "Suitable for ploughing, cultivating and transporting farm materials."
   },
   {
@@ -21,8 +21,8 @@
     "location": "Wardha",
     "power": "75 HP",
     "availability": "Available",
-    "image": "/images/harvester.png",
-    "description": "Helps farmers harvest crops efficiently and save valuable time."
+    "image": "https://imgs.search.brave.com/nDR9h8s7CF0W1djW1zvwpUZRCSSbdTldDhqLfmeF2gk/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9jZG4u/Y3JlYXRlLnZpc3Rh/LmNvbS9hcGkvbWVk/aWEvc21hbGwvMjE3/MTAzMDUvc3RvY2st/cGhvdG8tY29tYmlu/ZS1oYXJ2ZXN0ZXIt/b24tYS13aGVhdC1m/aWVsZC13aXRoLWEt/Ymx1ZS1za3k",
+    "description": "Harvests crops efficiently and reduces manual labour."
   },
   {
     "id": 3,
@@ -33,8 +33,8 @@
     "location": "Amravati",
     "power": "35 HP compatible",
     "availability": "Available",
-    "image": "/images/rotavator.png",
-    "description": "Prepares soil for planting and breaks up hard soil efficiently."
+    "image": "https://imgs.search.brave.com/ch9u4k6cSzORDd19zs58g4It-QbHddjrEFry5imsoxU/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzA5LzkyLzUyLzQ2/LzM2MF9GXzk5MjUy/NDY0NF9FbkpyYXRn/eEs0cG4zUDNVdFJC/MTJnWTU5azBQNzQx/cy5qcGc",
+    "description": "Prepares soil and breaks up hard ground before sowing."
   },
   {
     "id": 4,
@@ -45,8 +45,151 @@
     "location": "Nagpur",
     "power": "Tractor operated",
     "availability": "Available",
-    "image": "/images/seed-drill.png",
-    "powerType": "Tractor operated",
+    "image": "https://imgs.search.brave.com/bP__9bbeV8kZEnX14i_QiMjIwTGFCyTigu-83KWT8wI/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly90aWlt/Zy50aXN0YXRpYy5j/b20vZnAvMS8wMDQv/OTg4L2hpZ2gtcGVy/Zm9ybWFuY2Utc2Vl/ZC1kcmlsbC1tYWNo/aW5lLTUzMS5qcGc",
     "description": "Supports uniform seed placement and efficient sowing."
+  },
+  {
+    "id": 5,
+    "name": "Power Tiller",
+    "category": "Soil Preparation",
+    "price": 1000,
+    "unit": "day",
+    "location": "Pune",
+    "power": "12 HP",
+    "availability": "Available",
+    "image": "https://imgs.search.brave.com/osUyzt25QbFbHR4dJVJVji0bBPhH9zBFRfBXr3-RXPE/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9jcGlt/Zy50aXN0YXRpYy5j/b20vMDc4MTk5NTIv/Yi80L1Bvd2VyLVRp/bGxlci5qcGc",
+    "description": "Compact machine for cultivating soil on small farms."
+  },
+  {
+    "id": 6,
+    "name": "Plough Machine",
+    "category": "Soil Preparation",
+    "price": 600,
+    "unit": "day",
+    "location": "Wardha",
+    "power": "Tractor operated",
+    "availability": "Available",
+    "image": "https://imgs.search.brave.com/kjGuAQEzfICAmLEsJAKnQLKu3f2TyjUqp9tM0sYayPs/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly90aHVt/YnMuZHJlYW1zdGlt/ZS5jb20vYi9vbGQt/cGxvdWdoLWN1dHRp/bmctZnVycm93LWZh/cm1lcnMtZmllbGQt/NDkyOTMyODcuanBn",
+    "description": "Turns and loosens soil to prepare fields for planting."
+  },
+  {
+    "id": 7,
+    "name": "Spraying Machine",
+    "category": "Spraying",
+    "price": 450,
+    "unit": "day",
+    "location": "Nagpur",
+    "power": "Battery operated",
+    "availability": "Available",
+    "image": "https://imgs.search.brave.com/mIzIO9qztA8MysZXKn9DWyXsJercIDpwlg7qm1_tMyo/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly81Lmlt/aW1nLmNvbS9kYXRh/NS9TRUxMRVIvRGVm/YXVsdC8yMDI0Lzcv/NDMyNDg1NjQ3L1pJ/L1FDL1RPLzQ5OTAy/NjcvbW9ydGFyLXNw/cmF5aW5nLW1hY2hp/bmUtNTAweDUwMC5q/cGc",
+    "description": "Helps apply pesticides and other crop treatments."
+  },
+  {
+    "id": 8,
+    "name": "Water Pump",
+    "category": "Irrigation",
+    "price": 500,
+    "unit": "day",
+    "location": "Amravati",
+    "power": "5 HP",
+    "availability": "Available",
+    "image": "https://imgs.search.brave.com/55m1FLI4TCSqFmg870nO4GIvBkjdjRALL8hnQkCbbkY/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wNDcv/NzI3LzMwNy9zbWFs/bC9vbGQtd2F0ZXIt/cHVtcC1tYWNoaW5l/LWxvbmctYmx1ZS1w/aXBlLWF0LXRoZS1w/b25kLXBob3RvLmpw/Zw",
+    "description": "Pumps water for agricultural irrigation requirements."
+  },
+  {
+    "id": 9,
+    "name": "Cultivator",
+    "category": "Soil Preparation",
+    "price": 750,
+    "unit": "day",
+    "location": "Nashik",
+    "power": "Tractor operated",
+    "availability": "Available",
+    "image": "https://imgs.search.brave.com/qLnmjOQvnXOGQ5GWtfl4fpEyWGZWCCoB_XCczu1lSM0/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9vbWFn/cm9pbmRpYS5jb20v/d3AtY29udGVudC91/cGxvYWRzLzIwMjMv/MDkvQ3VsdGl2YXRv/ci05LXR5bmVzdy5q/cGc",
+    "description": "Loosens soil and helps control weeds between crop rows."
+  },
+  {
+    "id": 10,
+    "name": "Thresher Machine",
+    "category": "Harvesting",
+    "price": 1800,
+    "unit": "day",
+    "location": "Pune",
+    "power": "25 HP compatible",
+    "availability": "Available",
+    "image": "https://imgs.search.brave.com/3hsRvbAhdKKroGIyoIbbbpiybEgaSWATUb8nFv6qcDU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90aHVt/YnMuZHJlYW1zdGlt/ZS5jb20vYi9ibGFk/ZXMtd2hlYXQtaGFy/dmVzdGVyLTcxODcz/NC5qcGc",
+    "description": "Separates grains from harvested stalks and crop material."
+  },
+  {
+    "id": 11,
+    "name": "Mini Tractor",
+    "category": "Tractor",
+    "price": 900,
+    "unit": "day",
+    "location": "Nagpur",
+    "power": "25 HP",
+    "availability": "Available",
+    "image": "https://imgs.search.brave.com/oKNQY59IWqvk4rkHsi_EmAz1Xe8WiWjfuCihhJxK8yo/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvOTA5/NDc5NTgvcGhvdG8v/YS1icmlnaHQtcmVk/LXRyYWN0b3Itb24t/Z3JlZW4tZ3Jhc3Mu/anBnP3M9NjEyeDYx/MiZ3PTAmaz0yMCZj/PTkxZ2szT1N1TFZi/eTFGdmJhbXRvZ2ZY/WVZybUNsM2pVU0Zx/ZXR2c0ZPNjg9",
+    "description": "Useful for small farms and narrow agricultural spaces."
+  },
+  {
+    "id": 12,
+    "name": "Disc Harrow",
+    "category": "Soil Preparation",
+    "price": 850,
+    "unit": "day",
+    "location": "Wardha",
+    "power": "Tractor operated",
+    "availability": "Available",
+    "image": "https://imgs.search.brave.com/zv3v6Lq4zx1os9r2ulKn7YKlJxIT9TkuHVTvdald4p4/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzIwLzA5Lzk1LzY3/LzM2MF9GXzIwMDk5/NTY3NTJfQTViTUJG/VjdLU3pQOEdGbXpQ/RzNpaXZ5YXdtNWhp/RzUuanBn",
+    "description": "Breaks soil clods and helps prepare land for cultivation."
+  },
+  {
+    "id": 13,
+    "name": "Paddy Transplanter",
+    "category": "Planting",
+    "price": 2200,
+    "unit": "day",
+    "location": "Bhandara",
+    "power": "Engine operated",
+    "availability": "Available",
+    "image": "https://imgs.search.brave.com/skhHQ29iunis9rPWEyeo9XvsTgYzxYRN2u-1bJVEr44/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly90aWlt/Zy50aXN0YXRpYy5j/b20vZnAvMS8wMDQv/MTEzLzgtcm93LXBh/ZGR5LXRyYW5zcGxh/bnRlci02MTMuanBn",
+    "description": "Helps transplant rice seedlings into prepared fields."
+  },
+  {
+    "id": 14,
+    "name": "Fertilizer Spreader",
+    "category": "Fertilizing",
+    "price": 550,
+    "unit": "day",
+    "location": "Amravati",
+    "power": "Tractor operated",
+    "availability": "Available",
+    "image": "https://imgs.search.brave.com/lMBbbY7pU656nyvchZm-jiy52LTgV38Mj5oTTySHh_w/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9sZS1j/ZG4uaGlidXdlYnNp/dGVzLmNvbS82MGRk/ZTcyMjA2Yzg0ZTEz/YjQ4ZDU3OTZlNjIz/NjU2OS9kbXMzcmVw/L211bHRpL29wdC9l/bGVjdHJpYy0xLTE5/MjB3LmpwZw",
+    "description": "Distributes fertilizer across fields for crop nutrition."
+  },
+  {
+    "id": 15,
+    "name": "Baler Machine",
+    "category": "Harvesting",
+    "price": 2000,
+    "unit": "day",
+    "location": "Nashik",
+    "power": "Tractor operated",
+    "availability": "Available",
+    "image": "https://imgs.search.brave.com/iawaHk6OSMlSnkDLiqA9MEAQAO0qwbpo4UUwQW0--kE/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9hc3Nl/dHMudHJhY3Rvcmp1/bmN0aW9uLmNvbS90/cmFjdG9yLWp1bmN0/aW9uL2Fzc2V0cy9p/bWFnZXMvaW1hZ2Vz/L2ltcGxlbWVudFRy/YWN0b3Ivc2lyb2Nj/by0xMjUtc2lsYWdl/LWJhbGVyLTUyLTE3/MjA1ODk1OTAud2Vi/cA",
+    "description": "Collects and compresses straw or hay into manageable bales."
+  },
+  {
+    "id": 16,
+    "name": "Agricultural Trailer",
+    "category": "Transportation",
+    "price": 800,
+    "unit": "day",
+    "location": "Nagpur",
+    "power": "Tractor attached",
+    "availability": "Available",
+    "image": "https://imgs.search.brave.com/eQND6ZrGhh2eZd_aDOtHB7X7k9PpqzOZz4OcOaREDNE/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly90aHVt/YnMuZHJlYW1zdGlt/ZS5jb20vYi90cmFj/dG9yLWFncmljdWx0/dXJhbC10cmFpbGVy/LWZsYXgtZmllbGQt/MjcxNjEyNjAuanBn",
+    "description": "Transports crops, seeds, fertilizer and other farm supplies."
   }
 ]

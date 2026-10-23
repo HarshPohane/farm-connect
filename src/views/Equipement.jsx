@@ -72,7 +72,7 @@ function Equipment() {
 
         <div className="equipment-hero-image">
           <img
-            src="/images/tractor.png"
+            src="https://imgs.search.brave.com/pAH5XN-2cuMG7z2DeFLa6cSr_1edbfUeKv1dMTIy0oc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/bWFnbmlmaWMuY29t/L3ByZW1pdW0tcGhv/dG8vaGFwcHktc21p/bGluZy1pbmRpYW4t/ZmFybWVyLXdpdGgt/dHJhY3Rvci1yZWFs/LWZhcm1pbmctbGlm/ZS1ydXJhbC1pbmRp/YV8xMjU3OTAyLTYz/MDkuanBnP2dhPUdB/MS4xLjkzOTMwNjE5/NS4xNzgzMDAwMjM5/JnNlbXQ9YWlzX3Rl/c3RfYiZ3PTc0MCZx/PTgw"
             alt="Tractor for agricultural work"
           />
         </div>

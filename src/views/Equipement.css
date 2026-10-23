@@ -86,10 +86,13 @@
 }
 
 .equipment-hero-image img {
+  display: block;
   width: 100%;
-  max-width: 440px;
-  max-height: 330px;
-  object-fit: contain;
+  max-width: 500px;
+  height: 400px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 12px;
 }
 
 /* Benefits Section */
@@ -353,7 +356,7 @@
   }
 
   .equipment-hero-image img {
-    max-height: 240px;
+    height: 240px;
   }
 
   .equipment-hero-points {
