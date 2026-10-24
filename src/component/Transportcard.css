@@ -1,0 +1,141 @@
+.transport-card {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  border: 1px solid #e1ebe1;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease,
+              border-color 0.3s ease;
+}
+
+.transport-card:hover {
+  transform: translateY(-5px);
+  border-color: #10b981;
+}
+
+/* Vehicle Image */
+.transport-card-image {
+  position: relative;
+  width: 100%;
+  height: 210px;
+  overflow: hidden;
+  background-color: #f7faf7;
+}
+
+.transport-card-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: none;
+  transition: transform 0.5s ease;
+}
+
+.transport-card:hover .transport-card-image img {
+  transform: scale(1.05);
+}
+
+/* Vehicle Type */
+.transport-card-type {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  padding: 7px 12px;
+  background-color: #1b5e20;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 5px;
+}
+
+/* Card Content */
+.transport-card-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 22px;
+}
+
+.transport-card-content h3 {
+  margin: 0 0 12px;
+  color: #1b5e20;
+  font-size: 21px;
+}
+
+.transport-card-location {
+  margin: 0 0 14px;
+  color: #526357;
+  font-size: 14px;
+}
+
+.transport-card-description {
+  color: #526357;
+  font-size: 14px;
+  line-height: 1.7;
+  margin: 0 0 20px;
+}
+
+/* Price */
+.transport-card-price {
+  padding: 15px 0;
+  margin-top: auto;
+  border-top: 1px solid #e1ebe1;
+}
+
+.transport-price-label {
+  color: #526357;
+  font-size: 13px;
+}
+
+.transport-card-price h4 {
+  margin: 7px 0 0;
+  color: #d97706;
+  font-size: 24px;
+}
+
+.transport-card-price h4 span {
+  color: #526357;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+/* Contact Button */
+.transport-card-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 12px 16px;
+  margin-top: 12px;
+  background-color: #1b5e20;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.transport-card-btn:hover {
+  background-color: #d97706;
+}
+
+.transport-card-btn span {
+  font-size: 20px;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .transport-card-image {
+    height: 180px;
+  }
+
+  .transport-card-content {
+    padding: 18px;
+  }
+
+  .transport-card-content h3 {
+    font-size: 19px;
+  }
+}
