@@ -1,0 +1,257 @@
+
+/* Hero points */
+.transport-hero-points {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 20px;
+  margin-top: 25px;
+  color: #1b5e20;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* Information section */
+.transport-info {
+  padding: 65px 7%;
+  background-color: #ffffff;
+}
+
+.transport-heading {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 35px;
+}
+
+.transport-heading > span {
+  color: #d97706;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.transport-heading h2 {
+  color: #1b5e20;
+  font-size: 32px;
+  margin: 12px 0;
+}
+
+.transport-heading p {
+  color: #526357;
+  line-height: 1.7;
+}
+
+.transport-info-list,
+.transport-steps {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 25px;
+}
+
+.transport-info-item {
+  padding: 28px 24px;
+  border: 1px solid #e1ebe1;
+  border-radius: 12px;
+  transition: background-color 0.3s ease,
+              border-color 0.3s ease,
+              transform 0.3s ease;
+}
+
+.transport-info-item:hover {
+  background-color: #f7faf7;
+  border-color: #10b981;
+  transform: translateY(-4px);
+}
+
+.transport-info-icon {
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+.transport-info-item h3,
+.transport-step h3 {
+  color: #1b5e20;
+  margin-bottom: 12px;
+}
+
+.transport-info-item p,
+.transport-step p {
+  color: #526357;
+  line-height: 1.7;
+}
+
+/* Search results */
+.transport-results {
+  color: #526357;
+  margin: 18px 0;
+  font-size: 14px;
+}
+
+.transport-clear-btn,
+.transport-reset-btn {
+  padding: 10px 16px;
+  border: 1px solid #1b5e20;
+  border-radius: 6px;
+  background-color: #ffffff;
+  color: #1b5e20;
+  cursor: pointer;
+  transition: background-color 0.3s ease,
+              color 0.3s ease;
+}
+
+.transport-clear-btn:hover,
+.transport-reset-btn:hover {
+  background-color: #1b5e20;
+  color: #ffffff;
+}
+
+.transport-empty {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 35px 20px;
+  color: #526357;
+  background-color: #f7faf7;
+  border: 1px solid #e1ebe1;
+  border-radius: 10px;
+}
+
+.transport-empty h3 {
+  color: #1b5e20;
+  margin-bottom: 10px;
+}
+
+/* How it works */
+.transport-how {
+  padding: 65px 7%;
+  background-color: #f7faf7;
+}
+
+.transport-step {
+  padding: 25px;
+  background-color: #ffffff;
+  border: 1px solid #e1ebe1;
+  border-radius: 12px;
+  transition: border-color 0.3s ease,
+              transform 0.3s ease;
+}
+
+.transport-step:hover {
+  border-color: #10b981;
+  transform: translateY(-4px);
+}
+
+.transport-step-number {
+  display: inline-block;
+  color: #d97706;
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+
+/* Benefits */
+.transport-benefits {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 45px;
+  padding: 70px 7%;
+  background-color: #ffffff;
+}
+
+.transport-benefits-content h2 {
+  color: #1b5e20;
+  font-size: 32px;
+  margin: 16px 0;
+}
+
+.transport-benefits-content p,
+.transport-benefits-content li {
+  color: #526357;
+  line-height: 1.8;
+}
+
+.transport-benefits-content ul {
+  padding-left: 22px;
+  margin-top: 18px;
+}
+
+.transport-benefits-content li {
+  margin-bottom: 8px;
+}
+
+.transport-benefits-image img {
+  display: block;
+  width: 100%;
+  height: 330px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+/* Contact buttons */
+.transport-help-actions {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.transport-contact-btn {
+  display: inline-block;
+  padding: 13px 24px;
+  border: 1px solid #ffffff;
+  border-radius: 6px;
+  color: #ffffff;
+  text-decoration: none;
+  transition: background-color 0.3s ease,
+              color 0.3s ease;
+}
+
+.transport-contact-btn:hover {
+  background-color: #ffffff;
+  color: #1b5e20;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+  .transport-info-list,
+  .transport-steps {
+    grid-template-columns: 1fr;
+  }
+
+  .transport-benefits {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .transport-heading h2,
+  .transport-benefits-content h2 {
+    font-size: 26px;
+  }
+
+  .transport-hero-points {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .transport-benefits-image img {
+    height: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .transport-info,
+  .transport-how,
+  .transport-benefits {
+    padding: 45px 5%;
+  }
+
+  .transport-heading h2,
+  .transport-benefits-content h2 {
+    font-size: 23px;
+  }
+
+  .transport-help-actions {
+    flex-direction: column;
+    align-items: center;
+  }
+}
