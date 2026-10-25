@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "name": "Mahindra Tractor",
+    "type": "Tractor",
+    "price": 1200,
+    "pricePerKm": 30,
+    "capacityTons": 2,
+    "location": "Nagpur",
+    "image": "/images/tractor.png"
+  },
+  {
+    "id": 2,
+    "name": "Farm Goods Truck",
+    "type": "Truck",
+    "price": 2500,
+    "pricePerKm": 50,
+    "capacityTons": 10,
+    "location": "Wardha",
+    "image": "/images/machinery-field.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Agricultural Trailer",
+    "type": "Trailer",
+    "price": 800,
+    "pricePerKm": 20,
+    "capacityTons": 5,
+    "location": "Pune",
+    "image": "/images/tractor.png"
+  },
+  {
+    "id": 4,
+    "name": "Heavy Duty Tractor",
+    "type": "Tractor",
+    "price": 1800,
+    "pricePerKm": 35,
+    "capacityTons": 3,
+    "location": "Amravati",
+    "image": "/images/tractor.png"
+  },
+  {
+    "id": 5,
+    "name": "Mini Pickup Truck",
+    "type": "Pickup",
+    "price": 1500,
+    "pricePerKm": 25,
+    "capacityTons": 1.5,
+    "location": "Nagpur",
+    "image": "/images/machinery-field.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Heavy Goods Truck",
+    "type": "Truck",
+    "price": 3500,
+    "pricePerKm": 65,
+    "capacityTons": 15,
+    "location": "Pune",
+    "image": "/images/machinery-field.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Farm Harvest Trailer",
+    "type": "Trailer",
+    "price": 1000,
+    "pricePerKm": 22,
+    "capacityTons": 6,
+    "location": "Wardha",
+    "image": "/images/tractor.png"
+  },
+  {
+    "id": 8,
+    "name": "Mini Tractor",
+    "type": "Tractor",
+    "price": 900,
+    "pricePerKm": 20,
+    "capacityTons": 1,
+    "location": "Yavatmal",
+    "image": "/images/tractor.png"
+  },
+  {
+    "id": 9,
+    "name": "Agricultural Transport Truck",
+    "type": "Truck",
+    "price": 3000,
+    "pricePerKm": 55,
+    "capacityTons": 12,
+    "location": "Mumbai",
+    "image": "/images/machinery-field.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Farm Utility Trailer",
+    "type": "Trailer",
+    "price": 700,
+    "pricePerKm": 18,
+    "capacityTons": 3,
+    "location": "Bhandara",
+    "image": "/images/tractor.png"
+  },
+  {
+    "id": 11,
+    "name": "Medium Goods Truck",
+    "type": "Truck",
+    "price": 2200,
+    "pricePerKm": 40,
+    "capacityTons": 7,
+    "location": "Chandrapur",
+    "image": "/images/machinery-field.jpg"
+  },
+  {
+    "id": 12,
+    "name": "Farm Material Pickup",
+    "type": "Pickup",
+    "price": 1300,
+    "pricePerKm": 22,
+    "capacityTons": 1,
+    "location": "Akola",
+    "image": "/images/machinery-field.jpg"
+  }
+]
