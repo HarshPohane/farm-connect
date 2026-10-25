@@ -119,4 +119,45 @@
     "location": "Akola",
     "image": "/images/machinery-field.jpg"
   }
+  ,
+{
+  "id": 13,
+  "name": "Refrigerated Mini Truck",
+  "type": "Cold Storage",
+  "price": 3000,
+  "pricePerKm": 45,
+  "capacityTons": 2,
+  "location": "Nagpur",
+  "image": "/images/cold-storage-truck.jpg"
+},
+{
+  "id": 14,
+  "name": "Refrigerated Goods Truck",
+  "type": "Cold Storage",
+  "price": 4500,
+  "pricePerKm": 60,
+  "capacityTons": 5,
+  "location": "Pune",
+  "image": "/images/cold-storage-truck.jpg"
+},
+{
+  "id": 15,
+  "name": "Heavy Refrigerated Truck",
+  "type": "Cold Storage",
+  "price": 6500,
+  "pricePerKm": 80,
+  "capacityTons": 10,
+  "location": "Mumbai",
+  "image": "/images/cold-storage-truck.jpg"
+},
+{
+  "id": 16,
+  "name": "Small Insulated Delivery Van",
+  "type": "Cold Storage",
+  "price": 2000,
+  "pricePerKm": 30,
+  "capacityTons": 1,
+  "location": "Wardha",
+  "image": "/images/cold-storage-truck.jpg"
+}
 ]

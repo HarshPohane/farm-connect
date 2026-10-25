@@ -1,53 +1,54 @@
 import "./TransportCard.css";
 
-function TransportCard({ transport }) {
+function TransportCard({ item, onBook }) {
   return (
     <div className="transport-card">
-
       <div className="transport-card-image">
-        <img
-          src={transport.image}
-          alt={transport.name}
-        />
+        <img src={item.image} alt={item.name} />
 
         <span className="transport-card-type">
-          {transport.type}
+          {item.type}
         </span>
       </div>
 
       <div className="transport-card-content">
-        <h3>{transport.name}</h3>
-
-        <p className="transport-card-location">
-          <span>📍</span> {transport.location}
-        </p>
-
-        <p className="transport-card-description">
-          Suitable for transporting crops, farming materials
-          and agricultural products.
-        </p>
-
-        <div className="transport-card-price">
+        <div className="transport-card-header">
           <div>
-            <span className="transport-price-label">
-              Rental Price
-            </span>
+            <h3>{item.name}</h3>
+            <p className="transport-card-location">
+              <span>⌖</span> {item.location}
+            </p>
+          </div>
 
-            <h4>
-              ₹{transport.price}
-              <span> / day</span>
-            </h4>
+          <div className="transport-card-price">
+            <strong>₹{item.price.toLocaleString("en-IN")}</strong>
+            <span>per day</span>
           </div>
         </div>
 
-        <a
-          href="/contact"
-          className="transport-card-btn"
-        >
-          Contact Provider <span>→</span>
-        </a>
-      </div>
+        <div className="transport-card-info">
+          <div className="transport-card-info-item">
+            <span>Distance Rate</span>
+            <strong>₹{item.pricePerKm}/km</strong>
+          </div>
 
+          <div className="transport-card-info-item">
+            <span>Load Capacity</span>
+            <strong>{item.capacityTons} tons</strong>
+          </div>
+        </div>
+
+        <div className="transport-card-footer">
+          <p>Reliable farm goods transportation</p>
+
+          <button
+            type="button"
+            onClick={() => onBook(item)}
+          >
+            Book Transport <span>→</span>
+          </button>
+        </div>
+      </div>
     </div>
   );
 }
