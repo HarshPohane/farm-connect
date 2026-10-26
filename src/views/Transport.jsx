@@ -77,13 +77,12 @@ function Transport() {
 
   return (
     <main className="transport-page">
-
       {/* Hero Section */}
       <section className="transport-hero">
         <div className="transport-hero-container">
-
           <div className="transport-hero-content">
             <span className="transport-hero-badge">
+              <img src="/images/transport-icon.png" alt="" />
               FARMCONNECT TRANSPORT SERVICES
             </span>
 
@@ -95,7 +94,7 @@ function Transport() {
             <p>
               Move your crops, farming equipment and agricultural
               materials with ease. Find tractors, trucks, trailers
-              and pickup vehicles for your farm transportation needs.
+              and pickup vehicles for your transportation needs.
             </p>
 
             <div className="transport-hero-actions">
@@ -141,7 +140,7 @@ function Transport() {
             </div>
 
             <div className="transport-hero-info">
-              <span className="transport-hero-info-icon">✓</span>
+              <img src="/images/vehicle.png" alt="" />
               <div>
                 <strong>Farm Transport</strong>
                 <p>For agricultural needs</p>
@@ -149,14 +148,13 @@ function Transport() {
             </div>
 
             <div className="transport-hero-floating">
-              <span>🌾</span>
+              <img src="/images/crops.png" alt="" />
               <div>
                 <strong>Made for Farmers</strong>
                 <p>From farm to market</p>
               </div>
             </div>
           </div>
-
         </div>
       </section>
 
@@ -184,7 +182,7 @@ function Transport() {
         {/* Search and Filters */}
         <div className="transport-filters">
           <div className="transport-search">
-            <span aria-hidden="true">⌕</span>
+            <img src="/images/search.png" alt="" />
 
             <input
               type="search"
@@ -253,7 +251,8 @@ function Transport() {
                       <h3>{item.name}</h3>
 
                       <p className="transport-location">
-                        <span>Location:</span> {item.location}
+                        <img src="/images/location.png" alt="" />
+                        {item.location}
                       </p>
                     </div>
 
@@ -271,7 +270,8 @@ function Transport() {
                   </p>
 
                   <div className="transport-specifications">
-                    <div>
+                    <div className="transport-spec">
+                      <img src="/images/price.png" alt="" />
                       <span className="transport-spec-label">
                         Distance Rate
                       </span>
@@ -282,7 +282,8 @@ function Transport() {
                       </strong>
                     </div>
 
-                    <div>
+                    <div className="transport-spec">
+                      <img src="/images/capacity.png" alt="" />
                       <span className="transport-spec-label">
                         Load Capacity
                       </span>
@@ -293,7 +294,8 @@ function Transport() {
                       </strong>
                     </div>
 
-                    <div>
+                    <div className="transport-spec">
+                      <img src="/images/vehicle.png" alt="" />
                       <span className="transport-spec-label">
                         Vehicle Type
                       </span>
@@ -319,7 +321,7 @@ function Transport() {
             ))
           ) : (
             <div className="transport-empty">
-              <span className="transport-empty-icon">⌕</span>
+              <img src="/images/search.png" alt="" />
               <h3>No transport found</h3>
 
               <p>
@@ -351,6 +353,7 @@ function Transport() {
 
         <div className="transport-steps">
           <div className="transport-step">
+            <img src="/images/vehicle.png" alt="" />
             <span className="transport-step-number">01</span>
             <h3>Choose a Vehicle</h3>
             <p>
@@ -359,6 +362,7 @@ function Transport() {
           </div>
 
           <div className="transport-step">
+            <img src="/images/price.png" alt="" />
             <span className="transport-step-number">02</span>
             <h3>Compare Pricing</h3>
             <p>
@@ -368,6 +372,7 @@ function Transport() {
           </div>
 
           <div className="transport-step">
+            <img src="/images/booking.png" alt="" />
             <span className="transport-step-number">03</span>
             <h3>Request Booking</h3>
             <p>
@@ -396,27 +401,26 @@ function Transport() {
 
         <ul className="transport-benefits-list">
           <li>
-            <span>✓</span>
+            <img src="/images/check.png" alt="" />
             Multiple vehicle types in one place
           </li>
 
           <li>
-            <span>✓</span>
+            <img src="/images/check.png" alt="" />
             Search and filter by location
           </li>
 
           <li>
-            <span>✓</span>
+            <img src="/images/check.png" alt="" />
             Clear daily and per-kilometre rates
           </li>
 
           <li>
-            <span>✓</span>
+            <img src="/images/check.png" alt="" />
             Simple vehicle selection process
           </li>
         </ul>
       </section>
-
     </main>
   );
 }

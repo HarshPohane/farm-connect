@@ -1,62 +1,33 @@
 
-/* Main Page */
-
 .transport-page {
-  min-height: 100vh;
-  background: #f7faf7;
+  width: 100%;
   color: #1a2e22;
-  font-family: Arial, Helvetica, sans-serif;
+  background: #ffffff;
+  font-family: Arial, sans-serif;
 }
 
 .transport-page * {
   box-sizing: border-box;
 }
 
-/* =========================
-   HERO SECTION
-========================= */
+.transport-page img {
+  max-width: 100%;
+}
 
+/* Hero Section */
 .transport-hero {
-  position: relative;
+  padding: 70px 6%;
+  background: linear-gradient(120deg, #f0f8ed, #ffffff, #fff7e8);
   overflow: hidden;
-  padding: 75px 6%;
-  color: #ffffff;
-  background: linear-gradient(120deg, #103d25, #1b5e20 60%, #287a37);
-}
-
-.transport-hero::before {
-  content: "";
-  position: absolute;
-  top: -130px;
-  right: -100px;
-  width: 350px;
-  height: 350px;
-  border: 1px solid #ffffff20;
-  border-radius: 50%;
-  pointer-events: none;
-}
-
-.transport-hero::after {
-  content: "";
-  position: absolute;
-  right: 12%;
-  bottom: -180px;
-  width: 250px;
-  height: 250px;
-  border: 1px solid #ffffff20;
-  border-radius: 50%;
-  pointer-events: none;
 }
 
 .transport-hero-container {
-  position: relative;
-  z-index: 1;
+  max-width: 1250px;
+  margin: auto;
   display: grid;
   grid-template-columns: 1.1fr 0.9fr;
   align-items: center;
   gap: 55px;
-  max-width: 1250px;
-  margin: 0 auto;
 }
 
 .transport-hero-content {
@@ -64,415 +35,375 @@
 }
 
 .transport-hero-badge {
-  display: inline-block;
-  padding: 10px 15px;
-  border: 1px solid #ffffff50;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 16px;
   border-radius: 30px;
-  background: #ffffff10;
-  color: #d8f5dc;
-  font-size: 11px;
+  background: #e1f3df;
+  color: #1b5e20;
+  font-size: 12px;
   font-weight: 700;
-  letter-spacing: 1.5px;
+  letter-spacing: 1px;
+}
+
+.transport-hero-badge img {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
 }
 
 .transport-hero-content h1 {
-  margin: 25px 0 20px;
-  font-size: clamp(36px, 4.5vw, 58px);
-  font-weight: 800;
+  margin: 24px 0 18px;
+  font-size: clamp(34px, 4vw, 56px);
   line-height: 1.15;
-  letter-spacing: -1.5px;
+  font-weight: 800;
 }
 
 .transport-hero-content h1 span {
   display: block;
-  color: #fbbf24;
+  color: #27813a;
 }
 
 .transport-hero-content > p {
-  max-width: 560px;
-  margin: 0;
-  color: #e0eee3;
-  font-size: 15px;
+  max-width: 570px;
+  color: #526357;
+  font-size: 16px;
   line-height: 1.9;
+  margin-bottom: 28px;
 }
 
 .transport-hero-actions {
   display: flex;
+  align-items: center;
   flex-wrap: wrap;
   gap: 14px;
-  margin-top: 30px;
 }
 
 .transport-hero-primary,
 .transport-hero-secondary {
+  min-height: 48px;
+  padding: 14px 22px;
   display: inline-flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   gap: 12px;
-  min-height: 49px;
-  padding: 14px 21px;
-  border-radius: 7px;
-  font-size: 13px;
-  font-weight: 700;
+  border-radius: 8px;
   text-decoration: none;
-  transition: background 0.2s ease, color 0.2s ease;
+  font-weight: 700;
+  transition: 0.2s ease;
 }
 
 .transport-hero-primary {
-  background: #f97316;
+  background: #1b5e20;
   color: #ffffff;
 }
 
 .transport-hero-primary:hover {
-  background: #ea580c;
-}
-
-.transport-hero-primary span {
-  font-size: 19px;
+  background: #124619;
 }
 
 .transport-hero-secondary {
-  color: #ffffff;
-  border: 1px solid #ffffff70;
+  border: 1px solid #1b5e20;
+  color: #1b5e20;
+  background: #ffffff;
 }
 
 .transport-hero-secondary:hover {
-  background: #ffffff;
-  color: #1b5e20;
+  background: #eaf5e8;
 }
-
-/* Hero Statistics */
 
 .transport-hero-stats {
   display: flex;
   flex-wrap: wrap;
-  gap: 0;
-  margin-top: 43px;
-  padding-top: 25px;
-  border-top: 1px solid #ffffff35;
-}
-
-.transport-hero-stat {
-  padding: 0 25px;
-  border-right: 1px solid #ffffff35;
-}
-
-.transport-hero-stat:first-child {
-  padding-left: 0;
-}
-
-.transport-hero-stat:last-child {
-  border-right: none;
+  gap: 35px;
+  margin-top: 42px;
 }
 
 .transport-hero-stat h3 {
-  margin: 0 0 8px;
-  color: #fbbf24;
+  margin: 0 0 7px;
+  color: #1b5e20;
   font-size: 22px;
-  font-weight: 800;
 }
 
 .transport-hero-stat p {
   margin: 0;
-  color: #e0eee3;
-  font-size: 11px;
+  color: #647267;
+  font-size: 13px;
 }
 
 /* Hero Image */
-
 .transport-hero-visual {
   position: relative;
   min-width: 0;
-  padding: 12px 12px 35px 0;
+  padding: 15px;
 }
 
 .transport-hero-image {
   height: 390px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   overflow: hidden;
-  border: 5px solid #ffffff29;
-  border-radius: 18px;
-  background: #eaf2e8;
+  border-radius: 24px;
+  background: #e3f0dd;
 }
 
 .transport-hero-image img {
-  display: block;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 
-/* Floating Information */
-
-.transport-hero-info {
+.transport-hero-info,
+.transport-hero-floating {
   position: absolute;
-  bottom: 0;
-  left: -30px;
   display: flex;
   align-items: center;
   gap: 12px;
-  max-width: calc(100% - 10px);
-  padding: 16px 20px;
-  border-radius: 10px;
+  padding: 14px 18px;
   background: #ffffff;
-  color: #1a3322;
+  border-radius: 12px;
 }
 
-.transport-hero-info-icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 37px;
-  height: 37px;
-  flex-shrink: 0;
-  border-radius: 50%;
-  background: #e0f4e4;
-  color: #1b5e20;
-  font-weight: 800;
+.transport-hero-info {
+  left: -10px;
+  bottom: 55px;
+}
+
+.transport-hero-floating {
+  right: -5px;
+  top: 40px;
+}
+
+.transport-hero-info img,
+.transport-hero-floating img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
 }
 
 .transport-hero-info strong,
 .transport-hero-floating strong {
-  display: block;
   font-size: 13px;
 }
 
 .transport-hero-info p,
 .transport-hero-floating p {
   margin: 5px 0 0;
-  color: #6b786d;
+  color: #647267;
   font-size: 11px;
 }
 
-.transport-hero-floating {
-  position: absolute;
-  top: 35px;
-  right: -12px;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  padding: 14px 16px;
-  border-radius: 9px;
-  background: #ffffff;
-  color: #1a3322;
-}
-
-.transport-hero-floating > span {
-  font-size: 25px;
-}
-
-/* =========================
-   TRANSPORT CONTENT
-========================= */
-
+/* Common Section Headings */
 .transport-content {
   max-width: 1250px;
-  margin: 0 auto;
-  padding: 65px 30px;
+  margin: auto;
+  padding: 75px 6%;
 }
 
 .transport-heading {
   display: flex;
-  justify-content: space-between;
   align-items: end;
+  justify-content: space-between;
   gap: 20px;
   margin-bottom: 28px;
 }
 
 .transport-small-title {
   display: inline-block;
-  color: #218044;
-  font-size: 11px;
+  margin-bottom: 12px;
+  color: #27813a;
+  font-size: 12px;
   font-weight: 800;
-  letter-spacing: 1.6px;
+  letter-spacing: 1.5px;
 }
 
 .transport-heading h2,
 .transport-info-heading h2,
-.transport-benefits h2 {
-  margin: 12px 0;
-  color: #173d26;
-  font-size: clamp(25px, 3vw, 36px);
+.transport-benefits-content h2 {
+  margin: 0 0 12px;
+  font-size: clamp(26px, 3vw, 36px);
   line-height: 1.25;
 }
 
-.transport-heading > div > p,
-.transport-info-heading > p {
-  margin: 0;
+.transport-heading p,
+.transport-info-heading > p,
+.transport-benefits-content > p {
   color: #647267;
-  font-size: 14px;
-  line-height: 1.7;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.transport-heading p {
+  margin: 0;
 }
 
 .transport-count {
-  padding: 10px 15px;
-  border-radius: 6px;
-  background: #e4f3e7;
+  flex-shrink: 0;
+  padding: 11px 15px;
+  border-radius: 7px;
+  background: #edf7eb;
   color: #1b5e20;
   font-size: 13px;
   font-weight: 700;
-  white-space: nowrap;
 }
 
-/* Search and Filters */
-
+/* Filters */
 .transport-filters {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr auto;
   gap: 12px;
-  margin-bottom: 28px;
-  padding: 17px;
-  border: 1px solid #e0e9e1;
-  border-radius: 10px;
-  background: #ffffff;
+  margin-bottom: 32px;
+  padding: 18px;
+  background: #f7faf7;
+  border: 1px solid #e4ebe2;
+  border-radius: 12px;
 }
 
 .transport-search {
   display: flex;
-  flex: 1 1 250px;
   align-items: center;
   gap: 10px;
-  min-height: 46px;
-  padding: 0 13px;
-  border: 1px solid #dce6dd;
-  border-radius: 6px;
+  min-width: 0;
+  padding: 0 12px;
+  background: #ffffff;
+  border: 1px solid #dce5da;
+  border-radius: 7px;
 }
 
-.transport-search > span {
-  color: #218044;
-  font-size: 25px;
+.transport-search img {
+  width: 21px;
+  height: 21px;
+  object-fit: contain;
+  flex-shrink: 0;
 }
 
 .transport-search input {
   width: 100%;
   min-width: 0;
+  padding: 13px 0;
   border: none;
   outline: none;
   background: transparent;
   color: #1a2e22;
-  font-size: 14px;
+  font-size: 13px;
 }
 
 .transport-filters select {
-  min-width: 145px;
-  min-height: 46px;
-  padding: 0 12px;
-  border: 1px solid #dce6dd;
-  border-radius: 6px;
+  width: 100%;
+  min-width: 0;
+  padding: 12px;
+  border: 1px solid #dce5da;
+  border-radius: 7px;
+  outline-color: #27813a;
   background: #ffffff;
-  color: #34483a;
+  color: #334638;
   font-size: 13px;
-  cursor: pointer;
 }
 
 .transport-reset-btn {
-  min-height: 44px;
-  padding: 0 16px;
-  border: none;
-  border-radius: 6px;
-  background: #edf5ee;
+  padding: 12px 15px;
+  border: 1px solid #1b5e20;
+  border-radius: 7px;
+  background: #ffffff;
   color: #1b5e20;
-  font-weight: 700;
   cursor: pointer;
+  font-weight: 700;
+  font-size: 13px;
 }
 
 .transport-reset-btn:hover {
-  background: #dceede;
+  background: #eaf5e8;
 }
 
 /* Vehicle List */
-
 .transport-list {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 22px;
 }
 
 .transport-item {
   display: grid;
-  grid-template-columns: 270px minmax(0, 1fr);
-  gap: 24px;
+  grid-template-columns: 280px minmax(0, 1fr);
+  gap: 25px;
   padding: 20px;
-  border: 1px solid #e1e9e2;
-  border-radius: 12px;
+  border: 1px solid #e3eae1;
+  border-radius: 14px;
   background: #ffffff;
-  transition: border-color 0.2s ease;
-}
-
-.transport-item:hover {
-  border-color: #91c79b;
 }
 
 .transport-image {
   position: relative;
-  width: 100%;
-  height: 220px;
+  min-width: 0;
+  min-height: 230px;
   overflow: hidden;
-  border: 1px solid #dbe7dc;
-  border-radius: 9px;
-  background: #edf4ed;
+  border: 1px solid #dfe8dc;
+  border-radius: 10px;
+  background: #f2f7ef;
 }
 
-.transport-image img {
+.transport-image > img {
   display: block;
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  transition: transform 0.3s ease;
-}
-
-.transport-item:hover .transport-image img {
-  transform: scale(1.04);
+  min-height: 230px;
+  object-fit: contain;
 }
 
 .transport-type {
   position: absolute;
   top: 12px;
   left: 12px;
-  padding: 7px 11px;
-  border-radius: 5px;
-  background: #ffffff;
-  color: #1b5e20;
+  padding: 7px 12px;
+  border-radius: 20px;
+  background: #1b5e20;
+  color: #ffffff;
   font-size: 11px;
-  font-weight: 800;
+  font-weight: 700;
 }
 
 .transport-details {
-  display: flex;
   min-width: 0;
+  display: flex;
   flex-direction: column;
 }
 
 .transport-title-row {
   display: flex;
-  justify-content: space-between;
   align-items: flex-start;
+  justify-content: space-between;
   gap: 15px;
 }
 
 .transport-title-row h3 {
-  margin: 2px 0 10px;
-  color: #1a3322;
+  margin: 0 0 10px;
   font-size: 21px;
+  overflow-wrap: anywhere;
 }
 
 .transport-location {
+  display: flex;
+  align-items: center;
+  gap: 7px;
   margin: 0;
   color: #647267;
   font-size: 13px;
 }
 
-.transport-location span {
-  color: #34483a;
-  font-weight: 700;
+.transport-location img {
+  width: 17px;
+  height: 17px;
+  object-fit: contain;
 }
 
 .transport-day-price {
-  display: flex;
   flex-shrink: 0;
+  display: flex;
   flex-direction: column;
+  align-items: flex-end;
   gap: 5px;
-  text-align: right;
 }
 
 .transport-day-price strong {
@@ -481,61 +412,68 @@
 }
 
 .transport-day-price span {
-  color: #77847a;
+  color: #647267;
   font-size: 12px;
 }
 
 .transport-description {
   margin: 18px 0;
-  color: #657267;
+  color: #647267;
   font-size: 13px;
-  line-height: 1.7;
+  line-height: 1.8;
 }
 
+/* Vehicle Specifications */
 .transport-specifications {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 12px;
-  padding: 16px 0;
-  border-top: 1px solid #e7eee8;
-  border-bottom: 1px solid #e7eee8;
+  padding: 18px 0;
+  border-top: 1px solid #e8eee6;
+  border-bottom: 1px solid #e8eee6;
 }
 
-.transport-specifications > div {
-  display: flex;
+.transport-spec {
   min-width: 0;
+  display: flex;
   flex-direction: column;
+  align-items: flex-start;
   gap: 8px;
 }
 
+.transport-spec img {
+  width: 23px;
+  height: 23px;
+  object-fit: contain;
+}
+
 .transport-spec-label {
-  color: #78847b;
+  color: #647267;
   font-size: 11px;
 }
 
-.transport-specifications strong {
-  color: #293e2e;
-  font-size: 14px;
+.transport-spec strong {
+  font-size: 13px;
   overflow-wrap: anywhere;
 }
 
 /* Booking Button */
-
 .transport-bottom {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 15px;
+  flex-wrap: wrap;
+  gap: 14px;
   margin-top: auto;
-  padding-top: 17px;
+  padding-top: 18px;
 }
 
-.transport-bottom p {
+.transport-bottom > p {
   display: flex;
   align-items: center;
   gap: 8px;
   margin: 0;
-  color: #607064;
+  color: #526357;
   font-size: 12px;
 }
 
@@ -544,153 +482,134 @@
   height: 8px;
   flex-shrink: 0;
   border-radius: 50%;
-  background: #22a052;
+  background: #16a34a;
 }
 
 .transport-bottom button,
 .transport-empty button {
   display: inline-flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   gap: 12px;
-  min-height: 43px;
-  padding: 12px 17px;
+  padding: 12px 18px;
   border: none;
-  border-radius: 6px;
-  background: #f97316;
+  border-radius: 7px;
+  background: #1b5e20;
   color: #ffffff;
   font-size: 13px;
   font-weight: 700;
   cursor: pointer;
-  transition: background 0.2s ease;
 }
 
 .transport-bottom button:hover,
 .transport-empty button:hover {
-  background: #ea580c;
-}
-
-.transport-bottom button span {
-  font-size: 18px;
+  background: #124619;
 }
 
 /* Empty Search Results */
-
 .transport-empty {
   padding: 55px 20px;
-  border: 1px dashed #cbdaca;
-  border-radius: 10px;
-  background: #ffffff;
   text-align: center;
+  border: 1px dashed #d5e2d2;
+  border-radius: 12px;
+  background: #f7faf7;
 }
 
-.transport-empty-icon {
-  display: inline-block;
-  color: #218044;
-  font-size: 35px;
+.transport-empty > img {
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
 }
 
 .transport-empty h3 {
-  margin: 15px 0 8px;
-  color: #1a3322;
+  margin: 16px 0 8px;
+  font-size: 21px;
 }
 
 .transport-empty p {
   margin-bottom: 20px;
-  color: #68766b;
+  color: #647267;
   font-size: 14px;
 }
 
-/* =========================
-   HOW IT WORKS
-========================= */
-
+/* How It Works */
 .transport-info {
-  padding: 65px 7%;
-  background: #edf5ee;
+  padding: 75px 6%;
+  background: #f5f9f3;
 }
 
 .transport-info-heading {
-  max-width: 750px;
-  margin: 0 auto 35px;
+  max-width: 700px;
+  margin: 0 auto 40px;
   text-align: center;
 }
 
 .transport-info-heading > p {
-  max-width: 600px;
-  margin: 0 auto;
+  margin: 0;
 }
 
 .transport-steps {
+  max-width: 1100px;
+  margin: auto;
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 22px;
-  max-width: 1150px;
-  margin: 0 auto;
+  gap: 25px;
 }
 
 .transport-step {
-  padding: 25px;
-  border: 1px solid #dce9dd;
-  border-radius: 10px;
+  padding: 28px 22px;
+  border: 1px solid #e1eade;
+  border-radius: 12px;
   background: #ffffff;
 }
 
+.transport-step > img {
+  display: block;
+  width: 42px;
+  height: 42px;
+  margin-bottom: 18px;
+  object-fit: contain;
+}
+
 .transport-step-number {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  width: 45px;
-  height: 45px;
-  border-radius: 8px;
-  background: #e2f3e5;
-  color: #1b5e20;
-  font-size: 15px;
+  display: block;
+  margin-bottom: 10px;
+  color: #27813a;
+  font-size: 13px;
   font-weight: 800;
 }
 
 .transport-step h3 {
-  margin: 18px 0 10px;
-  color: #1a3322;
-  font-size: 17px;
+  margin: 0 0 10px;
+  font-size: 19px;
 }
 
 .transport-step p {
   margin: 0;
-  color: #68766b;
+  color: #647267;
   font-size: 13px;
   line-height: 1.8;
 }
 
-/* =========================
-   BENEFITS
-========================= */
-
+/* Benefits */
 .transport-benefits {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 75px 6%;
   display: grid;
-  grid-template-columns: 1.2fr 1fr;
+  grid-template-columns: 1fr 1fr;
   align-items: center;
   gap: 45px;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 65px 30px;
-}
-
-.transport-benefits h2 {
-  max-width: 520px;
 }
 
 .transport-benefits-content > p {
-  max-width: 550px;
-  color: #647267;
-  font-size: 14px;
-  line-height: 1.9;
+  margin-bottom: 0;
 }
 
 .transport-benefits-list {
   display: flex;
   flex-direction: column;
-  gap: 17px;
+  gap: 20px;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -698,58 +617,40 @@
 
 .transport-benefits-list li {
   display: flex;
-  align-items: flex-start;
-  gap: 12px;
-  color: #34483a;
+  align-items: center;
+  gap: 13px;
+  color: #334638;
   font-size: 14px;
   line-height: 1.6;
 }
 
-.transport-benefits-list li span {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  width: 23px;
-  height: 23px;
+.transport-benefits-list img {
+  width: 22px;
+  height: 22px;
   flex-shrink: 0;
-  border-radius: 50%;
-  background: #dff2e2;
-  color: #1b5e20;
-  font-weight: 800;
+  object-fit: contain;
 }
 
-/* =========================
-   TABLET RESPONSIVENESS
-========================= */
-
-@media (max-width: 950px) {
-  .transport-hero {
-    padding: 60px 5%;
-  }
-
+/* Tablet */
+@media (max-width: 1000px) {
   .transport-hero-container {
-    grid-template-columns: 1fr 0.8fr;
-    gap: 30px;
-  }
-
-  .transport-hero-content h1 {
-    font-size: 40px;
+    gap: 25px;
   }
 
   .transport-hero-image {
-    height: 320px;
+    height: 330px;
   }
 
-  .transport-hero-stat {
-    padding: 0 14px;
+  .transport-filters {
+    grid-template-columns: 1fr 1fr;
   }
 
-  .transport-hero-stat h3 {
-    font-size: 19px;
+  .transport-search {
+    grid-column: 1 / -1;
   }
 
-  .transport-hero-info {
-    left: -12px;
+  .transport-reset-btn {
+    width: 100%;
   }
 
   .transport-item {
@@ -757,91 +658,70 @@
     gap: 18px;
   }
 
-  .transport-image {
-    height: 200px;
-  }
-
-  .transport-bottom {
-    align-items: flex-start;
-    flex-direction: column;
+  .transport-specifications {
+    gap: 8px;
   }
 }
 
-/* =========================
-   MOBILE RESPONSIVENESS
-========================= */
-
+/* Mobile */
 @media (max-width: 650px) {
   .transport-hero {
-    padding: 45px 20px 60px;
+    padding: 45px 5%;
   }
 
   .transport-hero-container {
     grid-template-columns: 1fr;
-    gap: 35px;
+    gap: 30px;
   }
 
   .transport-hero-content h1 {
-    margin-top: 20px;
-    font-size: 37px;
-    letter-spacing: -0.8px;
+    font-size: 36px;
   }
 
   .transport-hero-content > p {
     font-size: 14px;
   }
 
-  .transport-hero-actions {
-    gap: 10px;
-  }
-
-  .transport-hero-primary,
-  .transport-hero-secondary {
-    padding: 13px 15px;
-    font-size: 12px;
-  }
-
   .transport-hero-stats {
-    margin-top: 30px;
-    padding-top: 22px;
-  }
-
-  .transport-hero-stat {
-    margin-right: 12px;
-    padding: 0 12px 0 0;
+    gap: 22px;
   }
 
   .transport-hero-stat h3 {
-    font-size: 17px;
-  }
-
-  .transport-hero-stat p {
-    font-size: 10px;
+    font-size: 18px;
   }
 
   .transport-hero-visual {
-    padding: 12px 5px 30px;
+    padding: 10px;
   }
 
   .transport-hero-image {
-    height: 270px;
-    border-radius: 13px;
-  }
-
-  .transport-hero-floating {
-    top: 22px;
-    right: -3px;
-    padding: 11px;
+    height: 280px;
   }
 
   .transport-hero-info {
     left: 0;
-    bottom: 0;
-    padding: 12px;
+    bottom: 25px;
+  }
+
+  .transport-hero-floating {
+    right: 0;
+    top: 20px;
+  }
+
+  .transport-hero-info,
+  .transport-hero-floating {
+    padding: 10px;
+    gap: 8px;
+  }
+
+  .transport-hero-info img,
+  .transport-hero-floating img {
+    width: 23px;
+    height: 23px;
   }
 
   .transport-content {
-    padding: 45px 16px;
+    padding: 50px 5%;
   }
 
   .transport-heading {
@@ -850,27 +730,28 @@
   }
 
   .transport-filters {
-    align-items: stretch;
+    grid-template-columns: 1fr;
     padding: 12px;
   }
 
   .transport-search {
-    flex-basis: 100%;
-  }
-
-  .transport-filters select,
-  .transport-reset-btn {
-    width: 100%;
+    grid-column: auto;
   }
 
   .transport-item {
-    grid-template-columns: minmax(0, 1fr);
+    grid-template-columns: 1fr;
     gap: 18px;
     padding: 14px;
   }
 
   .transport-image {
     height: 220px;
+    min-height: 220px;
+  }
+
+  .transport-image > img {
+    height: 220px;
+    min-height: 220px;
   }
 
   .transport-title-row h3 {
@@ -878,16 +759,24 @@
   }
 
   .transport-day-price strong {
-    font-size: 20px;
+    font-size: 19px;
   }
 
   .transport-specifications {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    row-gap: 18px;
+    gap: 10px;
+  }
+
+  .transport-spec-label {
+    font-size: 10px;
+  }
+
+  .transport-spec strong {
+    font-size: 12px;
   }
 
   .transport-bottom {
-    gap: 14px;
+    align-items: flex-start;
+    flex-direction: column;
   }
 
   .transport-bottom button {
@@ -895,30 +784,61 @@
   }
 
   .transport-info {
-    padding: 45px 18px;
+    padding: 50px 5%;
   }
 
   .transport-steps {
     grid-template-columns: 1fr;
+    gap: 16px;
   }
 
   .transport-step {
-    padding: 21px;
+    padding: 22px;
   }
 
   .transport-benefits {
     grid-template-columns: 1fr;
     gap: 25px;
-    padding: 45px 20px;
+    padding: 50px 5%;
   }
 }
 
-/* Accessibility */
+@media (max-width: 380px) {
+  .transport-hero-content h1 {
+    font-size: 30px;
+  }
 
-@media (prefers-reduced-motion: reduce) {
-  .transport-page *,
-  .transport-page *::before,
-  .transport-page *::after {
-    transition: none !important;
+  .transport-hero-actions {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .transport-hero-primary,
+  .transport-hero-secondary {
+    width: 100%;
+  }
+
+  .transport-hero-stats {
+    gap: 15px;
+  }
+
+  .transport-hero-stat h3 {
+    font-size: 16px;
+  }
+
+  .transport-hero-stat p {
+    font-size: 11px;
+  }
+
+  .transport-title-row {
+    flex-direction: column;
+  }
+
+  .transport-day-price {
+    align-items: flex-start;
+  }
+
+  .transport-specifications {
+    grid-template-columns: 1fr;
   }
 }
