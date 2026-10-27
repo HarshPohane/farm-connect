@@ -1,34 +1,37 @@
+
 .transport-card {
-  display: grid;
-  grid-template-columns: 250px minmax(0, 1fr);
-  background: #ffffff;
-  border: 1px solid #e0e9e0;
-  border-radius: 12px;
+  width: 100%;
+  max-width: 420px;
   overflow: hidden;
-  transition: border-color 0.35s ease,
-    transform 0.35s ease;
+  background: #ffffff;
+  border: 1px solid #e4eee5;
+  border-radius: 18px;
+  box-shadow: 0 2px 8px rgba(27, 94, 32, 0.06);
+  transition: transform 0.3s ease, border-color 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .transport-card:hover {
-  border-color: #66a873;
-  transform: translateY(-4px);
+  transform: translateY(-7px);
+  border-color: #10b981;
+  box-shadow: 0 14px 28px rgba(27, 94, 32, 0.16);
 }
 
-/* Image */
+/* Image Section */
+
 .transport-card-image {
+  height: 235px;
   position: relative;
-  min-height: 220px;
   overflow: hidden;
-  background: #edf4ed;
+  background: #f0f7ef;
 }
 
 .transport-card-image img {
   width: 100%;
   height: 100%;
-  min-height: 220px;
-  object-fit: cover;
   display: block;
-  transition: transform 0.5s ease;
+  object-fit: cover;
+  transition: transform 0.4s ease;
 }
 
 .transport-card:hover .transport-card-image img {
@@ -37,186 +40,235 @@
 
 .transport-card-type {
   position: absolute;
-  top: 14px;
-  left: 14px;
-  background: #ffffff;
-  color: #1b5e20;
-  padding: 7px 12px;
-  border-radius: 5px;
+  top: 15px;
+  left: 15px;
+  padding: 7px 13px;
+  color: #ffffff;
+  background: #1b5e20;
+  border-radius: 20px;
   font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+}
+
+.transport-card-badge {
+  position: absolute;
+  right: 12px;
+  bottom: 12px;
+  padding: 8px 11px;
+  color: #1b5e20;
+  background: #ffffff;
+  border-radius: 8px;
+  font-size: 11px;
   font-weight: 700;
 }
 
-/* Content */
+/* Main Content */
+
 .transport-card-content {
-  min-width: 0;
-  padding: 22px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  padding: 21px;
 }
 
 .transport-card-header {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  gap: 15px;
+  gap: 12px;
 }
 
-.transport-card-header h3 {
+.transport-card-title {
+  min-width: 0;
+}
+
+.transport-card-title h3 {
   margin: 0 0 10px;
-  font-size: 21px;
   color: #1a2e22;
+  font-size: 20px;
+  font-weight: 750;
+  line-height: 1.35;
+  overflow-wrap: anywhere;
 }
 
 .transport-card-location {
+  display: flex;
+  align-items: center;
+  gap: 7px;
   margin: 0;
-  color: #68776c;
+  color: #657568;
   font-size: 13px;
 }
 
-.transport-card-location span {
-  color: #238039;
-  font-size: 17px;
+.transport-card-location img {
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
 }
 
 .transport-card-price {
+  flex-shrink: 0;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   gap: 4px;
-  flex-shrink: 0;
 }
 
 .transport-card-price strong {
   color: #1b5e20;
-  font-size: 23px;
+  font-size: 21px;
+  font-weight: 800;
+  white-space: nowrap;
 }
 
 .transport-card-price span {
-  color: #68776c;
+  color: #7b887d;
   font-size: 12px;
 }
 
-/* Price and capacity */
+/* Description */
+
+.transport-card-description {
+  margin: 19px 0;
+  color: #657568;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+/* Specifications */
+
 .transport-card-info {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 12px;
-  margin: 22px 0;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  padding: 15px 0;
+  border-top: 1px solid #edf2ed;
+  border-bottom: 1px solid #edf2ed;
 }
 
 .transport-card-info-item {
   display: flex;
-  flex-direction: column;
-  gap: 8px;
-  padding: 13px;
-  background: #f7faf7;
-  border: 1px solid #edf2ed;
-  border-radius: 7px;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
 }
 
-.transport-card-info-item span {
-  color: #68776c;
-  font-size: 12px;
+.transport-info-icon {
+  width: 38px;
+  height: 38px;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #1b5e20;
+  background: #eaf6eb;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.transport-card-info-item p {
+  margin: 0 0 5px;
+  color: #7b887d;
+  font-size: 11px;
 }
 
 .transport-card-info-item strong {
-  color: #1b5e20;
-  font-size: 15px;
+  color: #263b2b;
+  font-size: 14px;
+  overflow-wrap: anywhere;
 }
 
 /* Footer */
+
 .transport-card-footer {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  gap: 16px;
+  padding-top: 18px;
+}
+
+.transport-card-note {
+  display: flex;
   align-items: center;
-  gap: 15px;
-  border-top: 1px solid #edf1ed;
-  padding-top: 16px;
-}
-
-.transport-card-footer p {
-  color: #68776c;
+  gap: 8px;
+  color: #526357;
   font-size: 12px;
-  line-height: 1.5;
-  margin: 0;
 }
 
-.transport-card-footer button {
-  background: #1b5e20;
+.transport-status-dot {
+  width: 8px;
+  height: 8px;
+  flex-shrink: 0;
+  background: #10b981;
+  border-radius: 50%;
+}
+
+.transport-book-button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  padding: 13px 16px;
+  border: none;
+  border-radius: 10px;
   color: #ffffff;
-  border: 1px solid #1b5e20;
-  border-radius: 7px;
-  padding: 12px 16px;
-  font-size: 13px;
-  font-weight: 600;
-  white-space: nowrap;
+  background: #1b5e20;
+  font-size: 14px;
+  font-weight: 700;
   cursor: pointer;
-  transition: background 0.3s ease;
+  transition: background 0.25s ease;
 }
 
-.transport-card-footer button:hover {
-  background: #104519;
+.transport-book-button:hover {
+  background: #f97316;
 }
 
-.transport-card-footer button span {
-  margin-left: 6px;
+.transport-book-button span {
+  font-size: 20px;
+  line-height: 1;
+  transition: transform 0.25s ease;
 }
 
-/* Tablet */
-@media (max-width: 850px) {
+.transport-book-button:hover span {
+  transform: translateX(4px);
+}
+
+/* Responsive Design */
+
+@media (max-width: 480px) {
   .transport-card {
-    grid-template-columns: 200px minmax(0, 1fr);
+    max-width: 100%;
+    border-radius: 14px;
+  }
+
+  .transport-card-image {
+    height: 200px;
   }
 
   .transport-card-content {
     padding: 16px;
   }
 
-  .transport-card-header h3 {
-    font-size: 18px;
-  }
-
-  .transport-card-footer {
-    align-items: flex-start;
-    flex-direction: column;
-  }
-}
-
-/* Mobile */
-@media (max-width: 600px) {
-  .transport-card {
-    grid-template-columns: 1fr;
-  }
-
-  .transport-card-image {
-    height: 210px;
-    min-height: 210px;
-  }
-
-  .transport-card-image img {
-    height: 210px;
-    min-height: 210px;
-  }
-
-  .transport-card-content {
-    padding: 18px;
-  }
-
-  .transport-card-header h3 {
-    font-size: 18px;
+  .transport-card-title h3 {
+    font-size: 17px;
   }
 
   .transport-card-price strong {
-    font-size: 19px;
+    font-size: 18px;
   }
 
   .transport-card-info {
     gap: 8px;
   }
 
-  .transport-card-footer button {
-    width: 100%;
+  .transport-card-info-item {
+    gap: 7px;
+  }
+
+  .transport-info-icon {
+    width: 32px;
+    height: 32px;
+    font-size: 17px;
   }
 }
