@@ -13,6 +13,32 @@
   max-width: 100%;
 }
 
+.transport-spec-icon,
+.transport-step-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  background: #eaf7ea;
+  color: #1b5e20;
+  font-size: 20px;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.transport-location img,
+.transport-spec img,
+.transport-step img,
+.transport-benefits-list img,
+.transport-empty img,
+.transport-search img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
 /* Hero Section */
 .transport-hero {
   padding: 70px 6%;

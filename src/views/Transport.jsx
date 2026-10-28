@@ -1,6 +1,11 @@
 
 import { useState } from "react";
 import transportData from "../utils/Transport.json";
+import deliveryIcon from "../component/icon-images/fast-delivery.png";
+import searchIcon from "../component/icon-images/serach.png";
+import locationIcon from "../component/icon-images/location-pin.png";
+import connectIcon from "../component/icon-images/connect.png";
+import chooseIcon from "../component/icon-images/choose.png";
 import "./Transport.css";
 
 function Transport() {
@@ -82,7 +87,7 @@ function Transport() {
         <div className="transport-hero-container">
           <div className="transport-hero-content">
             <span className="transport-hero-badge">
-              <img src="/images/transport-icon.png" alt="" />
+              <img src={deliveryIcon} alt="" />
               FARMCONNECT TRANSPORT SERVICES
             </span>
 
@@ -140,7 +145,7 @@ function Transport() {
             </div>
 
             <div className="transport-hero-info">
-              <img src="/images/vehicle.png" alt="" />
+              <img src={connectIcon} alt="FarmConnect logo" />
               <div>
                 <strong>Farm Transport</strong>
                 <p>For agricultural needs</p>
@@ -148,7 +153,7 @@ function Transport() {
             </div>
 
             <div className="transport-hero-floating">
-              <img src="/images/crops.png" alt="" />
+              <img src={chooseIcon} alt="Farm field selection" />
               <div>
                 <strong>Made for Farmers</strong>
                 <p>From farm to market</p>
@@ -182,7 +187,7 @@ function Transport() {
         {/* Search and Filters */}
         <div className="transport-filters">
           <div className="transport-search">
-            <img src="/images/search.png" alt="" />
+            <img src={searchIcon} alt="Search" />
 
             <input
               type="search"
@@ -251,7 +256,7 @@ function Transport() {
                       <h3>{item.name}</h3>
 
                       <p className="transport-location">
-                        <img src="/images/location.png" alt="" />
+                        <img src={locationIcon} alt="Location" />
                         {item.location}
                       </p>
                     </div>
@@ -271,7 +276,9 @@ function Transport() {
 
                   <div className="transport-specifications">
                     <div className="transport-spec">
-                      <img src="/images/price.png" alt="" />
+                      <span className="transport-spec-icon" aria-hidden="true">
+                        ₹
+                      </span>
                       <span className="transport-spec-label">
                         Distance Rate
                       </span>
@@ -283,7 +290,9 @@ function Transport() {
                     </div>
 
                     <div className="transport-spec">
-                      <img src="/images/capacity.png" alt="" />
+                      <span className="transport-spec-icon" aria-hidden="true">
+                        ▣
+                      </span>
                       <span className="transport-spec-label">
                         Load Capacity
                       </span>
@@ -295,7 +304,7 @@ function Transport() {
                     </div>
 
                     <div className="transport-spec">
-                      <img src="/images/vehicle.png" alt="" />
+                      <img src={deliveryIcon} alt="Vehicle type" />
                       <span className="transport-spec-label">
                         Vehicle Type
                       </span>
@@ -321,7 +330,7 @@ function Transport() {
             ))
           ) : (
             <div className="transport-empty">
-              <img src="/images/search.png" alt="" />
+              <img src={searchIcon} alt="Search" />
               <h3>No transport found</h3>
 
               <p>
@@ -353,7 +362,7 @@ function Transport() {
 
         <div className="transport-steps">
           <div className="transport-step">
-            <img src="/images/vehicle.png" alt="" />
+            <img src={connectIcon} alt="Select vehicle" />
             <span className="transport-step-number">01</span>
             <h3>Choose a Vehicle</h3>
             <p>
@@ -362,7 +371,9 @@ function Transport() {
           </div>
 
           <div className="transport-step">
-            <img src="/images/price.png" alt="" />
+            <span className="transport-spec-icon transport-step-icon" aria-hidden="true">
+              ₹
+            </span>
             <span className="transport-step-number">02</span>
             <h3>Compare Pricing</h3>
             <p>
@@ -372,7 +383,7 @@ function Transport() {
           </div>
 
           <div className="transport-step">
-            <img src="/images/booking.png" alt="" />
+            <img src={chooseIcon} alt="Book service" />
             <span className="transport-step-number">03</span>
             <h3>Request Booking</h3>
             <p>
@@ -401,22 +412,22 @@ function Transport() {
 
         <ul className="transport-benefits-list">
           <li>
-            <img src="/images/check.png" alt="" />
+            <img src={chooseIcon} alt="Check" />
             Multiple vehicle types in one place
           </li>
 
           <li>
-            <img src="/images/check.png" alt="" />
+            <img src={chooseIcon} alt="Check" />
             Search and filter by location
           </li>
 
           <li>
-            <img src="/images/check.png" alt="" />
+            <img src={chooseIcon} alt="Check" />
             Clear daily and per-kilometre rates
           </li>
 
           <li>
-            <img src="/images/check.png" alt="" />
+            <img src={chooseIcon} alt="Check" />
             Simple vehicle selection process
           </li>
         </ul>
