@@ -7,7 +7,7 @@
     "pricePerKm": 30,
     "capacityTons": 2,
     "location": "Nagpur",
-    "image": "/images/tractor.png"
+    "image": "https://imgs.search.brave.com/YRSLMzC6Zd3Z__AV-tDV2GI88bfpN9W3YgIWHgrjBuk/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9hc3Nl/dHMua2hldGlnYWFk/aS5jb20vdHI6aC0y/MDAsdy0zMzAvbmV3/LXRyYWN0b3IvTWFo/aW5kcmEtQXJqdW4t/NjA1LURJLVVMVFJB/LS0xMTczNTcwODc2/MF9kTk5BdGRUcE4u/cG5n"
   },
   {
     "id": 2,
@@ -17,7 +17,7 @@
     "pricePerKm": 50,
     "capacityTons": 10,
     "location": "Wardha",
-    "image": "/images/machinery-field.jpg"
+    "image": "https://imgs.search.brave.com/Qan_bXaLAVBGpKmcpBoE7vX3VrPPDrNyVoOIBCG9d1Q/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzEwLzM0Lzc4LzEy/LzM2MF9GXzEwMzQ3/ODEyMjJfSllCYVpU/MWpScGhBN0F6T0ht/VHgzNmxEYkxkZVZv/TFAuanBn"
   },
   {
     "id": 3,
@@ -27,7 +27,7 @@
     "pricePerKm": 20,
     "capacityTons": 5,
     "location": "Pune",
-    "image": "/images/tractor.png"
+    "image": "https://imgs.search.brave.com/n7d36j3oFUfAmOyKJ_CtKIsjgyXVJ27q6Xfpxk23HCM/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTMw/NjMzNTUwOC9waG90/by9hLXRyYWN0b3It/YW5kLWl0cy10cmFp/bGVyLmpwZz9zPTYx/Mng2MTImdz0wJms9/MjAmYz1UemJvcGFJ/ZHpyMTRBdEFxM0VQ/Uk51NS0yZF8zODFL/eWNzQTMzclZ6VDhj/PQ"
   },
   {
     "id": 4,
@@ -37,7 +37,7 @@
     "pricePerKm": 35,
     "capacityTons": 3,
     "location": "Amravati",
-    "image": "/images/tractor.png"
+    "image": "https://imgs.search.brave.com/5Capgih7b6luITEg7NccIkSgiPPiBeL2nOknZxKmjIM/rs:fit:0:180:1:0/g:ce/aHR0cHM6Ly90aWlt/Zy50aXN0YXRpYy5j/b20vZnAvMS8wMDQv/NzIyL2hlYXZ5LWR1/dHktYWdyaWN1bHR1/cmFsLXRyYWN0b3Jz/LTQ2OS5qcGc"
   },
   {
     "id": 5,
@@ -47,7 +47,7 @@
     "pricePerKm": 25,
     "capacityTons": 1.5,
     "location": "Nagpur",
-    "image": "/images/machinery-field.jpg"
+    "image": "https://imgs.search.brave.com/D6UEn9Wshr0GEDPNkC8Dq5JJIKt8-VutinCGI1-kvOY/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly93d3cu/b25lbGFwLmluL25l/d3Mvd3AtY29udGVu/dC91cGxvYWRzLzIw/MjAvMDQvYXNob2st/bGV5bGFuZC1kb3N0/LWxpdGUtMS0zMDB4/MjAwLmpwZw"
   },
   {
     "id": 6,
@@ -57,7 +57,7 @@
     "pricePerKm": 65,
     "capacityTons": 15,
     "location": "Pune",
-    "image": "/images/machinery-field.jpg"
+    "image": "https://imgs.search.brave.com/BHQwRqff-22Mzydy9qfVHOlGmq42oPU0MY4GGNNBdps/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvNjE2/ODYyODk4L3Bob3Rv/L2RlY29yYXRlZC1v/bGQtZGVsaXZlcnkt/dHJ1Y2stYXNob2st/bGV5bGFuZC1pbi1y/YWphc3RoYW4taW5k/aWEuanBnP3M9NjEy/eDYxMiZ3PTAmaz0y/MCZjPUFIcnA4Wnp3/SmhXd0JUZWZqVVFR/bVZDdkpOeHBzYndG/dkwzaHp1WENiaWc9"
   },
   {
     "id": 7,
@@ -67,7 +67,7 @@
     "pricePerKm": 22,
     "capacityTons": 6,
     "location": "Wardha",
-    "image": "/images/tractor.png"
+    "image": "https://imgs.search.brave.com/Goir71Px3SXzcjmNYJk21e7ChkgvxFEmNezyIQ5MLBM/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTI2/Mjc5MDY3OS9waG90/by93aGlsZS1oYXJ2/ZXN0aW5nLWEtZmVt/YWxlLWZhcm1lci1j/bGltYmluZy1hdC10/aGUtdHJhaWxlci5q/cGc_cz02MTJ4NjEy/Jnc9MCZrPTIwJmM9/M3F5TXR1Tnp1Tnps/YVJvRGFBYzBTSnBM/aW11NERGMG4tUGpm/Nm9VQ0tFOD0"
   },
   {
     "id": 8,
@@ -77,7 +77,7 @@
     "pricePerKm": 20,
     "capacityTons": 1,
     "location": "Yavatmal",
-    "image": "/images/tractor.png"
+    "image": "https://imgs.search.brave.com/N923s3rmnElA0uRHcHap-dFTS-G_E7jYMdzqTrIUCyw/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS1waG90/by9mYXJtZXItbWlu/aS10cmFjdG9yLWxv/b3NlbnMtc29pbC1s/YXduLWxhbmQtY3Vs/dGl2YXRpb24tc3Vy/ZmFjZS1sZXZlbGlu/Z18xMDg5NTU0LTQw/MjMuanBnP3NlbXQ9/YWlzX2h5YnJpZCZ3/PTc0MCZxPTgw"
   },
   {
     "id": 9,
@@ -87,7 +87,7 @@
     "pricePerKm": 55,
     "capacityTons": 12,
     "location": "Mumbai",
-    "image": "/images/machinery-field.jpg"
+    "image": "https://imgs.search.brave.com/emzIAm6-lDwXdzd1P9xIH2FfrG6IUcqZVsPp5QPj5Bc/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvNDU4/Njk0ODUzL3Bob3Rv/L2luZGlhbi10cnVj/ay5qcGc_cz02MTJ4/NjEyJnc9MCZrPTIw/JmM9WkhaZmhyQUpl/b1YyNjZJSWktd1dO/VWt3eTNjcHk0N2R0/RjNiZW5ZOHh3MD0"
   },
   {
     "id": 10,
@@ -97,7 +97,7 @@
     "pricePerKm": 18,
     "capacityTons": 3,
     "location": "Bhandara",
-    "image": "/images/tractor.png"
+    "image": "https://imgs.search.brave.com/BHQwRqff-22Mzydy9qfVHOlGmq42oPU0MY4GGNNBdps/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvNjE2/ODYyODk4L3Bob3Rv/L2RlY29yYXRlZC1v/bGQtZGVsaXZlcnkt/dHJ1Y2stYXNob2st/bGV5bGFuZC1pbi1y/YWphc3RoYW4taW5k/aWEuanBnP3M9NjEy/eDYxMiZ3PTAmaz0y/MCZjPUFIcnA4Wnp3/SmhXd0JUZWZqVVFR/bVZDdkpOeHBzYndG/dkwzaHp1WENiaWc9"
   },
   {
     "id": 11,
@@ -107,7 +107,7 @@
     "pricePerKm": 40,
     "capacityTons": 7,
     "location": "Chandrapur",
-    "image": "/images/machinery-field.jpg"
+    "image": "https://imgs.search.brave.com/tVP4PHxsFz-oETR0r-6NNDS_HveIsW9wHwTbkse-7RE/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9zLmFs/aWNkbi5jb20vQHNj/MDQva2YvSDU3ZDRk/NjFhY2JiNTQ3YTE4/ZDUyZTZjMTY4ZTcw/NzFlaC5wbmdfMzAw/eDMwMC5qcGc"
   },
   {
     "id": 12,
@@ -117,7 +117,7 @@
     "pricePerKm": 22,
     "capacityTons": 1,
     "location": "Akola",
-    "image": "/images/machinery-field.jpg"
+    "image": "https://imgs.search.brave.com/efUioDIOptd_nqVu3Mzb4DuN_LZsBbpj3UKTXvSPST0/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9hc3Nl/dHMudHJhY3Rvcmp1/bmN0aW9uLmNvbS90/cnVjay1qdW5jdGlv/bi9hc3NldHMvaW1h/Z2VzL3RydWNrL21h/aGluZHJhLWJvbGVy/b3BpY2t1cGV4dHJh/bG9uZy1sZWZ0LTIu/d2VicD9mb3JtYXQ9/d2VicA"
   }
   ,
 {
@@ -128,7 +128,7 @@
   "pricePerKm": 45,
   "capacityTons": 2,
   "location": "Nagpur",
-  "image": "/images/cold-storage-truck.jpg"
+  "image": "https://imgs.search.brave.com/L-QcomcR9kdD1roZnzIj7HGlTkiUas4QFJ0qBX2kPSo/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tYXJ3/YWhpbmRpYS5jb20v/bWFyd2FocmVlZmVy/L2ltZy94ZW5vbi5q/cGc"
 },
 {
   "id": 14,
@@ -138,7 +138,7 @@
   "pricePerKm": 60,
   "capacityTons": 5,
   "location": "Pune",
-  "image": "/images/cold-storage-truck.jpg"
+  "image": "https://imgs.search.brave.com/zTG5K5u5Zj3iQdwmD4YU1lo0giBL8m22_-D5dUTvvjo/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly90aHVt/YnMuZHJlYW1zdGlt/ZS5jb20vYi9yZWZy/aWdlcmF0ZWQtZGVs/aXZlcnktdHJ1Y2st/MTA0NDU4MDYuanBn"
 },
 {
   "id": 15,
@@ -148,7 +148,7 @@
   "pricePerKm": 80,
   "capacityTons": 10,
   "location": "Mumbai",
-  "image": "/images/cold-storage-truck.jpg"
+  "image": "https://imgs.search.brave.com/sLv4FjTvQ7Nf5rGBgDNV70RYzcnLxm444OY6EKTXEFg/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzIxLzgwLzU0LzM4/LzM2MF9GXzIxODA1/NDM4ODFfVUY1V2Na/RlZ3Ym95MWtjemM0/VmJYRVhndFloZVB6/b3YuanBn"
 },
 {
   "id": 16,
@@ -158,6 +158,6 @@
   "pricePerKm": 30,
   "capacityTons": 1,
   "location": "Wardha",
-  "image": "/images/cold-storage-truck.jpg"
+  "image": "https://imgs.search.brave.com/yX5WcRwNOGzw7RmIQYCow3CUcNtPqIYSFRSKeLK7-tY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZS5tYWRlLWluLWNo/aW5hLmNvbS8yMDJm/MGowMHBJT29VbUFk/eXpybi9IT1dPLTct/VG9uLUNvbGQtU3Rv/cmFnZS1UcnVjay1m/b3ItQ29sZC1DaGFp/bi1Mb2dpc3RpY3Mt/VHJ1Y2sud2VicA"
 }
 ]

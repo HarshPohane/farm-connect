@@ -6,7 +6,7 @@ function TransportCard({ item, onBook }) {
     <div className="transport-card">
       {/* Transport Image */}
       <div className="transport-card-image">
-        <img src={item.image} alt={item.name} />
+        <img src={item.image} alt={item.name} loading="lazy" />
 
         <span className="transport-card-type">
           {item.type}

@@ -34,6 +34,7 @@
   height: 100%;
   object-fit: cover;
   object-position: center;
+  background-color: #f7faf7;
   transition: transform 0.5s ease;
 }
 

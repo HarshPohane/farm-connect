@@ -157,10 +157,12 @@
   aspect-ratio: 16 / 10;
   height: auto;
   object-fit: cover;
+  object-position: center;
   margin-bottom: 15px;
   box-sizing: border-box;
   border: 1px solid #e5eee5;
   border-radius: 10px;
+  background-color: #f7faf7;
 }
 
 .service-card h3 {
