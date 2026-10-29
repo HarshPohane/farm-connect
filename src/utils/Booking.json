@@ -1,0 +1,83 @@
+
+[
+  {
+    "id": 1,
+    "name": "Ramesh Patil",
+    "category": "Worker",
+    "location": "Nagpur",
+    "date": "2026-11-02",
+    "price": 600,
+    "status": "Confirmed",
+    "image": "/images/farmer.png"
+  },
+  {
+    "id": 2,
+    "name": "Mahindra Tractor",
+    "category": "Equipment",
+    "location": "Wardha",
+    "date": "2026-11-04",
+    "price": 1200,
+    "status": "Pending",
+    "image": "/images/tractor.png"
+  },
+  {
+    "id": 3,
+    "name": "Farm Goods Truck",
+    "category": "Transport",
+    "location": "Nagpur",
+    "date": "2026-11-06",
+    "price": 2500,
+    "status": "Confirmed",
+    "image": "/images/machinery-field.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Suresh Kumar",
+    "category": "Worker",
+    "location": "Amravati",
+    "date": "2026-11-08",
+    "price": 700,
+    "status": "Pending",
+    "image": "/images/farmer.png"
+  },
+  {
+    "id": 5,
+    "name": "Rotavator Machine",
+    "category": "Equipment",
+    "location": "Nagpur",
+    "date": "2026-11-10",
+    "price": 900,
+    "status": "Confirmed",
+    "image": "/images/tractor.png"
+  },
+  {
+    "id": 6,
+    "name": "Agricultural Trailer",
+    "category": "Transport",
+    "location": "Wardha",
+    "date": "2026-11-12",
+    "price": 800,
+    "status": "Cancelled",
+    "image": "/images/machinery-field.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Sunil Wankhede",
+    "category": "Worker",
+    "location": "Pune",
+    "date": "2026-11-14",
+    "price": 650,
+    "status": "Confirmed",
+    "image": "/images/farmer.png"
+  },
+  {
+    "id": 8,
+    "name": "Combine Harvester",
+    "category": "Equipment",
+    "location": "Amravati",
+    "date": "2026-11-16",
+    "price": 3500,
+    "status": "Pending",
+    "image": "/images/tractor.png"
+  }
+]
