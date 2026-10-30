@@ -154,7 +154,7 @@ function Transport() {
           <div className="transport-hero-visual">
             <div className="transport-hero-image">
               <img
-                src="/images/truck.png"
+                src="https://imgs.search.brave.com/4lraUU5NmFGSS6-NyH2AzaKouMsbSiQ-6mejb6vzmPo/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTk3/NTI5MDc5NS9waG90/by9jYXJnby10cmFu/c3BvcnRhdGlvbi1i/eS10cnVjay1zaGlw/cGluZy1jaGVja2xp/c3QuanBnP3M9NjEy/eDYxMiZ3PTAmaz0y/MCZjPXlmNnZTcFdV/Nzl0WDQ4dlowVW1a/MWItZ1RQZlZvUGVL/VFh3cG8wYWoyNUk9"
                 alt="Truck for farm goods transportation"
               />
             </div>
