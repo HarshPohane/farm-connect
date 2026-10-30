@@ -1,11 +1,13 @@
 
 import { useState } from "react";
 import transportData from "../utils/Transport.json";
+
 import deliveryIcon from "../component/icon-images/fast-delivery.png";
 import searchIcon from "../component/icon-images/serach.png";
 import locationIcon from "../component/icon-images/location-pin.png";
 import connectIcon from "../component/icon-images/connect.png";
 import chooseIcon from "../component/icon-images/choose.png";
+
 import "./Transport.css";
 
 function Transport() {
@@ -13,10 +15,12 @@ function Transport() {
   const [selectedType, setSelectedType] = useState("All");
   const [selectedLocation, setSelectedLocation] = useState("All");
 
+  // Get all available locations
   const locations = [
     ...new Set(transportData.map((item) => item.location)),
   ];
 
+  // Search and filter vehicles
   const filteredTransport = transportData.filter((item) => {
     const searchText = search.trim().toLowerCase();
 
@@ -35,45 +39,54 @@ function Transport() {
     return matchesSearch && matchesType && matchesLocation;
   });
 
-  const handleBooking = (item) => {
+  // Confirm and save transport booking
+  const handleBooking = (transport) => {
     const confirmed = window.confirm(
-      `Vehicle: ${item.name}\n` +
-        `Location: ${item.location}\n` +
-        `Price per day: ₹${item.price.toLocaleString("en-IN")}\n` +
-        `Price per km: ₹${item.pricePerKm ?? "N/A"}\n\n` +
-        "Do you want to save this booking request?"
+      `Confirm Your Transport Booking?\n\n` +
+      `Vehicle: ${transport.name}\n` +
+      `Type: ${transport.type}\n` +
+      `Location: ${transport.location}\n` +
+      `Price per day: ₹${Number(transport.price).toLocaleString("en-IN")}\n` +
+      `Price per km: ₹${transport.pricePerKm ?? "N/A"}\n\n` +
+      `Click OK to confirm your booking.`
     );
 
-    if (!confirmed) return;
+    if (!confirmed) {
+      return;
+    }
 
     try {
-      const existingBookings = JSON.parse(
-        localStorage.getItem("transportBookings") || "[]"
+      const oldBookings = JSON.parse(
+        localStorage.getItem("farmBookings") || "[]"
       );
 
-      const booking = {
-        bookingId: `${item.id}-${Date.now()}`,
-        vehicleId: item.id,
-        vehicleName: item.name,
-        type: item.type,
-        location: item.location,
-        price: item.price,
-        pricePerKm: item.pricePerKm ?? null,
-        status: "Pending",
-        bookedAt: new Date().toISOString(),
+      const newBooking = {
+        id: Date.now(),
+        type: "Transport",
+        name: transport.name,
+        location: transport.location,
+        price: Number(transport.price),
+        bookingDate: new Date().toLocaleDateString("en-IN"),
+        status: "Confirmed",
       };
 
       localStorage.setItem(
-        "transportBookings",
-        JSON.stringify([...existingBookings, booking])
+        "farmBookings",
+        JSON.stringify([...oldBookings, newBooking])
       );
 
-      alert("Your booking request has been saved successfully!");
-    } catch {
-      alert("Unable to save the booking. Please try again.");
+      alert(
+        `Transport Booking Confirmed Successfully!\n\n` +
+        `Vehicle: ${transport.name}\n` +
+        `Booking Status: Confirmed`
+      );
+    } catch (error) {
+      console.error("Booking Error:", error);
+      alert("Unable to save booking. Please try again.");
     }
   };
 
+  // Reset all filters
   const resetFilters = () => {
     setSearch("");
     setSelectedType("All");
@@ -82,9 +95,11 @@ function Transport() {
 
   return (
     <main className="transport-page">
+
       {/* Hero Section */}
       <section className="transport-hero">
         <div className="transport-hero-container">
+
           <div className="transport-hero-content">
             <span className="transport-hero-badge">
               <img src={deliveryIcon} alt="" />
@@ -160,11 +175,13 @@ function Transport() {
               </div>
             </div>
           </div>
+
         </div>
       </section>
 
       {/* Vehicle Listing Section */}
       <section className="transport-content" id="transport-list">
+
         <div className="transport-heading">
           <div>
             <span className="transport-small-title">
@@ -186,6 +203,7 @@ function Transport() {
 
         {/* Search and Filters */}
         <div className="transport-filters">
+
           <div className="transport-search">
             <img src={searchIcon} alt="Search" />
 
@@ -231,13 +249,16 @@ function Transport() {
           >
             Reset Filters
           </button>
+
         </div>
 
         {/* Vehicle Results */}
         <div className="transport-list">
+
           {filteredTransport.length > 0 ? (
             filteredTransport.map((item) => (
               <article className="transport-item" key={item.id}>
+
                 <div className="transport-image">
                   <img
                     src={item.image}
@@ -251,6 +272,7 @@ function Transport() {
                 </div>
 
                 <div className="transport-details">
+
                   <div className="transport-title-row">
                     <div>
                       <h3>{item.name}</h3>
@@ -263,7 +285,7 @@ function Transport() {
 
                     <div className="transport-day-price">
                       <strong>
-                        ₹{item.price.toLocaleString("en-IN")}
+                        ₹{Number(item.price).toLocaleString("en-IN")}
                       </strong>
                       <span>per day</span>
                     </div>
@@ -275,10 +297,9 @@ function Transport() {
                   </p>
 
                   <div className="transport-specifications">
+
                     <div className="transport-spec">
-                      <span className="transport-spec-icon" aria-hidden="true">
-                        ₹
-                      </span>
+                      <span className="transport-spec-icon">₹</span>
                       <span className="transport-spec-label">
                         Distance Rate
                       </span>
@@ -290,9 +311,7 @@ function Transport() {
                     </div>
 
                     <div className="transport-spec">
-                      <span className="transport-spec-icon" aria-hidden="true">
-                        ▣
-                      </span>
+                      <span className="transport-spec-icon">▣</span>
                       <span className="transport-spec-label">
                         Load Capacity
                       </span>
@@ -310,6 +329,7 @@ function Transport() {
                       </span>
                       <strong>{item.type}</strong>
                     </div>
+
                   </div>
 
                   <div className="transport-bottom">
@@ -325,6 +345,7 @@ function Transport() {
                       Book Transport <span>→</span>
                     </button>
                   </div>
+
                 </div>
               </article>
             ))
@@ -337,16 +358,21 @@ function Transport() {
                 Try another vehicle name, type or location.
               </p>
 
-              <button type="button" onClick={resetFilters}>
+              <button
+                type="button"
+                onClick={resetFilters}
+              >
                 Show All Vehicles
               </button>
             </div>
           )}
+
         </div>
       </section>
 
       {/* How It Works */}
       <section className="transport-info" id="transport-info">
+
         <div className="transport-info-heading">
           <span className="transport-small-title">
             SIMPLE BOOKING PROCESS
@@ -361,6 +387,7 @@ function Transport() {
         </div>
 
         <div className="transport-steps">
+
           <div className="transport-step">
             <img src={connectIcon} alt="Select vehicle" />
             <span className="transport-step-number">01</span>
@@ -371,7 +398,7 @@ function Transport() {
           </div>
 
           <div className="transport-step">
-            <span className="transport-spec-icon transport-step-icon" aria-hidden="true">
+            <span className="transport-spec-icon transport-step-icon">
               ₹
             </span>
             <span className="transport-step-number">02</span>
@@ -385,17 +412,19 @@ function Transport() {
           <div className="transport-step">
             <img src={chooseIcon} alt="Book service" />
             <span className="transport-step-number">03</span>
-            <h3>Request Booking</h3>
+            <h3>Confirm Booking</h3>
             <p>
-              Select your preferred vehicle and save your
+              Select your preferred vehicle and confirm your
               booking request.
             </p>
           </div>
+
         </div>
       </section>
 
       {/* Benefits Section */}
       <section className="transport-benefits">
+
         <div className="transport-benefits-content">
           <span className="transport-small-title">
             WHY FARMCONNECT?
@@ -431,7 +460,9 @@ function Transport() {
             Simple vehicle selection process
           </li>
         </ul>
+
       </section>
+
     </main>
   );
 }

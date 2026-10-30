@@ -36,11 +36,12 @@ function EquipmentCard({ equipment, onBook }) {
 
       <div className="equipment-booking">
         <p className="equipment-price">
-          ₹{equipment.price.toLocaleString("en-IN")}
+          ₹{Number(equipment.price).toLocaleString("en-IN")}
           <span> / {equipment.unit}</span>
         </p>
 
         <button
+          type="button"
           className="equipment-book-btn"
           onClick={() => onBook(equipment)}
         >

@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import workersData from "../utils/Worker.json";
 import WorkerCard from "../component/Workercard.jsx";
@@ -10,6 +11,31 @@ function Workers() {
   const [search, setSearch] = useState("");
   const [skill, setSkill] = useState("All");
 
+  // Worker Booking Function
+  const handleBooking = (worker) => {
+    const newBooking = {
+      id: Date.now(),
+      type: "Worker",
+      name: worker.name,
+      location: worker.location,
+      price: worker.wage || worker.price || 0,
+      bookingDate: new Date().toLocaleDateString("en-IN"),
+      status: "Confirmed",
+    };
+
+    const oldBookings = JSON.parse(
+      localStorage.getItem("farmBookings") || "[]"
+    );
+
+    localStorage.setItem(
+      "farmBookings",
+      JSON.stringify([...oldBookings, newBooking])
+    );
+
+    alert("Worker Booking Confirmed Successfully!");
+  };
+
+  // Search and Skill Filter
   const filteredWorkers = workersData.filter((worker) => {
     const matchesSearch =
       worker.name.toLowerCase().includes(search.toLowerCase()) ||
@@ -24,6 +50,7 @@ function Workers() {
   return (
     <div className="workers-page">
 
+      {/* Hero Section */}
       <section className="workers-hero">
         <div className="workers-hero-content">
           <span className="workers-tag">
@@ -52,6 +79,7 @@ function Workers() {
         </div>
       </section>
 
+      {/* Benefits Section */}
       <section className="workers-benefits">
         <div>
           <h3>Skilled Workers</h3>
@@ -69,7 +97,9 @@ function Workers() {
         </div>
       </section>
 
+      {/* Workers List */}
       <section className="workers-list-section" id="worker-list">
+
         <div className="workers-heading">
           <span>OUR WORKFORCE</span>
           <h2>Find the Right Farm Worker</h2>
@@ -101,7 +131,11 @@ function Workers() {
         <div className="workers-grid">
           {filteredWorkers.length > 0 ? (
             filteredWorkers.map((worker) => (
-              <WorkerCard key={worker.id} worker={worker} />
+              <WorkerCard
+                key={worker.id}
+                worker={worker}
+                onBook={() => handleBooking(worker)}
+              />
             ))
           ) : (
             <p className="workers-empty">
@@ -111,16 +145,21 @@ function Workers() {
         </div>
       </section>
 
+      {/* How It Works */}
       <section className="workers-info">
+
         <div className="workers-info-heading">
           <span>HOW IT WORKS</span>
           <h2>Hire Farm Workers in 3 Easy Steps</h2>
-          <p>Find the right people for your farming needs with FarmConnect.</p>
+          <p>
+            Find the right people for your farming needs with FarmConnect.
+          </p>
         </div>
 
         <div className="workers-info-grid">
+
           <div className="workers-info-card">
-            <img src={searchIcon} alt="" />
+            <img src={searchIcon} alt="Search workers" />
             <h3>1. Find Workers</h3>
             <p>
               Search for skilled workers by name, location or farming activity.
@@ -128,7 +167,7 @@ function Workers() {
           </div>
 
           <div className="workers-info-card">
-            <img src={chooseIcon} alt="" />
+            <img src={chooseIcon} alt="Compare skills" />
             <h3>2. Compare Skills</h3>
             <p>
               Check worker experience, skills and daily wages before choosing.
@@ -136,12 +175,13 @@ function Workers() {
           </div>
 
           <div className="workers-info-card">
-            <img src={skillsIcon} alt="" />
+            <img src={skillsIcon} alt="Plan farm work" />
             <h3>3. Plan Your Work</h3>
             <p>
               Choose workers to match your farm requirements and schedule.
             </p>
           </div>
+
         </div>
       </section>
 

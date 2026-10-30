@@ -1,87 +1,76 @@
 
 import "./TransportCard.css";
+import locationIcon from "./icon-images/location-pin.png";
+import deliveryIcon from "./icon-images/fast-delivery.png";
 
 function TransportCard({ item, onBook }) {
   return (
-    <div className="transport-card">
-      {/* Transport Image */}
-      <div className="transport-card-image">
-        <img src={item.image} alt={item.name} loading="lazy" />
+    <article className="transport-item">
 
-        <span className="transport-card-type">
+      <div className="transport-image">
+        <img src={item.image} alt={item.name} />
+
+        <span className="transport-type">
           {item.type}
-        </span>
-
-        <span className="transport-card-badge">
-          ✓ Available for Rent
         </span>
       </div>
 
-      {/* Transport Details */}
-      <div className="transport-card-content">
-        <div className="transport-card-header">
-          <div className="transport-card-title">
-            <h3>{item.name}</h3>
+      <div className="transport-details">
 
-            <p className="transport-card-location">
-              <img
-                src="/images/location.png"
-                alt="Location"
-              />
-              {item.location}
-            </p>
+        <h3>{item.name}</h3>
+
+        <p className="transport-location">
+          <img src={locationIcon} alt="Location" />
+          {item.location}
+        </p>
+
+        <p className="transport-description">
+          Suitable for agricultural goods and farming materials.
+        </p>
+
+        <div className="transport-specifications">
+
+          <div className="transport-spec">
+            <span>Distance Rate</span>
+            <strong>
+              ₹{item.pricePerKm ?? "N/A"}/km
+            </strong>
           </div>
 
-          <div className="transport-card-price">
+          <div className="transport-spec">
+            <span>Load Capacity</span>
+            <strong>
+              {item.capacityTons ?? "N/A"} tons
+            </strong>
+          </div>
+
+          <div className="transport-spec">
+            <img src={deliveryIcon} alt="" />
+            <strong>{item.type}</strong>
+          </div>
+
+        </div>
+
+        <div className="transport-bottom">
+
+          <div className="transport-day-price">
             <strong>
               ₹{Number(item.price).toLocaleString("en-IN")}
             </strong>
             <span>per day</span>
           </div>
-        </div>
-
-        <p className="transport-card-description">
-          Reliable transportation for your farm goods
-          and agricultural needs.
-        </p>
-
-        {/* Transport Specifications */}
-        <div className="transport-card-info">
-          <div className="transport-card-info-item">
-            <span className="transport-info-icon">↗</span>
-            <div>
-              <p>Distance Rate</p>
-              <strong>₹{item.pricePerKm}/km</strong>
-            </div>
-          </div>
-
-          <div className="transport-card-info-item">
-            <span className="transport-info-icon">▣</span>
-            <div>
-              <p>Load Capacity</p>
-              <strong>{item.capacityTons} Tons</strong>
-            </div>
-          </div>
-        </div>
-
-        {/* Booking Footer */}
-        <div className="transport-card-footer">
-          <span className="transport-card-note">
-            <span className="transport-status-dot"></span>
-            Suitable for farm transport
-          </span>
 
           <button
             type="button"
-            className="transport-book-button"
             onClick={() => onBook(item)}
           >
-            Book Transport
-            <span>→</span>
+            Book Transport →
           </button>
+
         </div>
+
       </div>
-    </div>
+    </article>
   );
 }
 

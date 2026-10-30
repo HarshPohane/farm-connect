@@ -1,19 +1,48 @@
-
 import { useState } from "react";
 import EquipmentData from "../utils/Equipment.json";
 import EquipmentCard from "../component/Equipmentcard.jsx";
 import "./Equipement.css";
+
+function createBookingId() {
+  return Date.now();
+}
 
 function Equipment() {
   const [search, setSearch] = useState("");
   const [category, setCategory] = useState("All");
   const [sort, setSort] = useState("default");
 
+  // Equipment Booking Function
+  function handleBooking(equipment) {
+    const newBooking = {
+      id: createBookingId(),
+      type: "Equipment",
+      name: equipment.name,
+      location: equipment.location,
+      price: equipment.price,
+      bookingDate: new Date().toLocaleDateString("en-IN"),
+      status: "Confirmed",
+    };
+
+    const oldBookings = JSON.parse(
+      localStorage.getItem("farmBookings") || "[]"
+    );
+
+    localStorage.setItem(
+      "farmBookings",
+      JSON.stringify([...oldBookings, newBooking])
+    );
+
+    alert("Equipment Booking Confirmed Successfully!");
+  }
+
+  // Equipment Categories
   const categories = [
     "All",
     ...new Set(EquipmentData.map((item) => item.category))
   ];
 
+  // Search, Filter and Sort
   const filteredEquipment = EquipmentData
     .filter((equipment) => {
       const searchText = search.toLowerCase();
@@ -34,14 +63,10 @@ function Equipment() {
       return a.id - b.id;
     });
 
-  function handleBooking(equipment) {
-    alert(
-      `You selected ${equipment.name}.\nRental price: ₹${equipment.price} per ${equipment.unit}.\nPlease contact the equipment owner to confirm availability and booking.`
-    );
-  }
-
   return (
     <main className="equipment-page">
+
+      {/* Hero Section */}
       <section className="equipment-hero">
         <div className="equipment-hero-content">
           <span className="equipment-tag">
@@ -78,6 +103,7 @@ function Equipment() {
         </div>
       </section>
 
+      {/* Benefits Section */}
       <section className="equipment-benefits">
         <div>
           <span className="benefit-number">01</span>
@@ -98,13 +124,17 @@ function Equipment() {
         </div>
       </section>
 
+      {/* Equipment List */}
       <section className="equipment-list-section" id="equipment-list">
+
         <div className="equipment-heading">
           <div>
             <span className="equipment-small-title">
               OUR EQUIPMENT
             </span>
+
             <h2>Find the Right Machinery</h2>
+
             <p>
               Explore available equipment and compare rental prices.
             </p>
@@ -115,9 +145,12 @@ function Equipment() {
           </span>
         </div>
 
+        {/* Search and Sort */}
         <div className="equipment-toolbar">
+
           <div className="equipment-search">
             <span>⌕</span>
+
             <input
               type="text"
               placeholder="Search equipment or location..."
@@ -137,8 +170,10 @@ function Equipment() {
             <option value="low">Price: Low to High</option>
             <option value="high">Price: High to Low</option>
           </select>
+
         </div>
 
+        {/* Categories */}
         <div className="equipment-categories">
           {categories.map((item) => (
             <button
@@ -155,18 +190,20 @@ function Equipment() {
           ))}
         </div>
 
+        {/* Equipment Cards */}
         <div className="equipment-results">
           {filteredEquipment.length > 0 ? (
             filteredEquipment.map((equipment) => (
               <EquipmentCard
                 key={equipment.id}
                 equipment={equipment}
-                onBook={handleBooking}
+                onBook={() => handleBooking(equipment)}
               />
             ))
           ) : (
             <div className="equipment-empty">
               <h3>No equipment found</h3>
+
               <p>
                 Try another search term or choose a different category.
               </p>
@@ -183,12 +220,16 @@ function Equipment() {
             </div>
           )}
         </div>
+
       </section>
 
+      {/* Help Section */}
       <section className="equipment-help">
         <div>
           <span>HAVE FARM MACHINERY?</span>
+
           <h2>Earn by Renting Out Your Equipment</h2>
+
           <p>
             Connect with farmers who need machinery for their
             agricultural work.
@@ -199,6 +240,7 @@ function Equipment() {
           Contact FarmConnect →
         </a>
       </section>
+
     </main>
   );
 }

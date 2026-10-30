@@ -305,6 +305,22 @@
   transform: translateY(-5px);
 }
 
+.worker-book-btn {
+  background: #1b5e20;
+  color: white;
+  border: none;
+  padding: 11px 20px;
+  border-radius: 7px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.worker-book-btn:hover {
+  background: #10b981;
+}
+
 
 .workers-info-card img {
   width: 55px;
