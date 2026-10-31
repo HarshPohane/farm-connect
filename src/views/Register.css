@@ -1,0 +1,177 @@
+
+/* Main Register Container */
+
+.register-container {
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  background: #F7FAF7;
+}
+
+/* Register Box */
+
+.register-box {
+  width: 900px;
+  display: flex;
+  background: #FFFFFF;
+  border-radius: 15px;
+  overflow: hidden;
+  border: 1px solid #dce8dc;
+}
+
+/* Left Image Section */
+
+.register-image {
+  width: 40%;
+  background: #1B5E20;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+.register-image img {
+  width: 100%;
+  max-width: 250px;
+  object-fit: contain;
+}
+
+.register-image h2 {
+  color: #FFFFFF;
+  font-size: 26px;
+  margin-top: 20px;
+}
+
+.register-image p {
+  color: #e5f2df;
+  font-size: 14px;
+}
+
+/* Right Register Section */
+
+.register-content {
+  width: 60%;
+  padding: 35px 40px;
+  box-sizing: border-box;
+}
+
+.register-content h2 {
+  color: #1B5E20;
+  font-size: 29px;
+  margin-bottom: 8px;
+}
+
+.register-content p {
+  color: #526357;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+/* Input Labels */
+
+.register-content label {
+  display: block;
+  color: #1A2E22;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 7px;
+}
+
+/* Input Fields */
+
+.register-content input {
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 15px;
+  border: 1px solid #CBD8CB;
+  border-radius: 7px;
+  font-size: 14px;
+  outline: none;
+  box-sizing: border-box;
+  transition: 0.3s;
+}
+
+.register-content input:focus {
+  border-color: #1B5E20;
+}
+
+/* Register Button */
+
+.register-btn {
+  width: 100%;
+  padding: 14px;
+  background: #1B5E20;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 7px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 8px;
+  transition: 0.3s;
+}
+
+.register-btn:hover {
+  background: #D97706;
+}
+
+/* Login Link */
+
+.login-text {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #526357;
+}
+
+.login-text a {
+  color: #1B5E20;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.login-text a:hover {
+  color: #D97706;
+}
+
+/* Responsive Design */
+
+@media (max-width: 650px) {
+
+  .register-container {
+    padding: 20px 15px;
+  }
+
+  .register-box {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .register-image {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .register-image img {
+    max-width: 130px;
+  }
+
+  .register-image h2 {
+    font-size: 22px;
+    margin-top: 10px;
+  }
+
+  .register-content {
+    width: 100%;
+    padding: 25px 20px;
+  }
+
+  .register-content h2 {
+    font-size: 25px;
+  }
+}

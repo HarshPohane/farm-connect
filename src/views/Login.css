@@ -1,0 +1,160 @@
+
+/* Login Main Container */
+
+.login-container {
+  min-height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  background: #F7FAF7;
+}
+
+/* Login Box */
+
+.login-box {
+  width: 850px;
+  display: flex;
+  background: #FFFFFF;
+  border-radius: 15px;
+  overflow: hidden;
+  border: 1px solid #dce8dc;
+}
+
+/* Left Image Section */
+
+.login-image {
+  width: 45%;
+  background: #1B5E20;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+.login-image img {
+  width: 100%;
+  max-width: 300px;
+  object-fit: contain;
+}
+
+/* Right Login Section */
+
+.login-content {
+  width: 55%;
+  padding: 45px 40px;
+}
+
+.login-content h2 {
+  color: #1B5E20;
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.login-content p {
+  color: #526357;
+  font-size: 15px;
+  margin-bottom: 25px;
+}
+
+/* Input Labels */
+
+.login-content label {
+  display: block;
+  color: #1A2E22;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+/* Input Fields */
+
+.login-content input {
+  width: 100%;
+  padding: 13px 15px;
+  margin-bottom: 20px;
+  border: 1px solid #CBD8CB;
+  border-radius: 7px;
+  font-size: 15px;
+  box-sizing: border-box;
+  outline: none;
+  transition: 0.3s;
+}
+
+.login-content input:focus {
+  border-color: #1B5E20;
+}
+
+/* Login Button */
+
+.login-btn {
+  width: 100%;
+  padding: 14px;
+  background: #1B5E20;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 7px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 10px;
+}
+
+.login-btn:hover {
+  background: #D97706;
+}
+
+/* Register Text */
+
+.register-text {
+  text-align: center;
+  margin-top: 25px;
+  font-size: 14px;
+  color: #526357;
+}
+
+.register-text a {
+  color: #1B5E20;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.register-text a:hover {
+  color: #D97706;
+}
+
+/* Responsive Design */
+
+@media (max-width: 650px) {
+
+  .login-container {
+    padding: 25px 15px;
+  }
+
+  .login-box {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .login-image {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+  }
+
+  .login-image img {
+    max-width: 170px;
+  }
+
+  .login-content {
+    width: auto;
+    padding: 30px 22px;
+  }
+
+  .login-content h2 {
+    font-size: 25px;
+  }
+
+}

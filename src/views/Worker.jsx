@@ -5,6 +5,7 @@ import WorkerCard from "../component/Workercard.jsx";
 import searchIcon from "../component/icon-images/serach.png";
 import chooseIcon from "../component/icon-images/choose.png";
 import skillsIcon from "../component/icon-images/skills.png";
+import { createBookingId } from "../utils/createBookingId.js";
 import "./Worker.css";
 
 function Workers() {
@@ -14,7 +15,7 @@ function Workers() {
   // Worker Booking Function
   const handleBooking = (worker) => {
     const newBooking = {
-      id: Date.now(),
+      id: createBookingId(),
       type: "Worker",
       name: worker.name,
       location: worker.location,

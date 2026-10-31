@@ -7,6 +7,7 @@ import searchIcon from "../component/icon-images/serach.png";
 import locationIcon from "../component/icon-images/location-pin.png";
 import connectIcon from "../component/icon-images/connect.png";
 import chooseIcon from "../component/icon-images/choose.png";
+import { createBookingId } from "../utils/createBookingId.js";
 
 import "./Transport.css";
 
@@ -61,7 +62,7 @@ function Transport() {
       );
 
       const newBooking = {
-        id: Date.now(),
+        id: createBookingId(),
         type: "Transport",
         name: transport.name,
         location: transport.location,

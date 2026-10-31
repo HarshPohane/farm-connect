@@ -1,9 +1,17 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import Button from "./Button/button";
 import logo from "./icon-images/connect.png";
 import "./Navbar.css";
 
 function Navbar() {
+  const navigate = useNavigate();
+  const isAuthenticated = Boolean(localStorage.getItem("currentUser"));
+
+  const handleLogout = () => {
+    localStorage.removeItem("currentUser");
+    navigate("/login", { replace: true });
+  };
+
   return (
     <nav className="navbar">
       <NavLink to="/" className="nav-logo">
@@ -14,18 +22,26 @@ function Navbar() {
         </h2>
       </NavLink>
 
-      <div className="nav-links">
-        <NavLink to="/">Home</NavLink>
-        <NavLink to="/workers">Workers</NavLink>
-        <NavLink to="/equipment">Equipment</NavLink>
-        <NavLink to="/transport">Transport</NavLink>
-        <NavLink to="/bookings">Bookings</NavLink>
-      </div>
+      {isAuthenticated ? (
+        <>
+          <div className="nav-links">
+            <NavLink to="/">Home</NavLink>
+            <NavLink to="/workers">Workers</NavLink>
+            <NavLink to="/equipment">Equipment</NavLink>
+            <NavLink to="/transport">Transport</NavLink>
+            <NavLink to="/bookings">Bookings</NavLink>
+          </div>
 
-      <div className="nav-buttons">
-        <Button text="Login" link="/login" type="outline" />
-        <Button text="Get Started" link="/register" type="primary" />
-      </div>
+          <div className="nav-buttons">
+            <Button text="Logout" type="outline" onClick={handleLogout} />
+          </div>
+        </>
+      ) : (
+        <div className="nav-buttons">
+          <Button text="Login" link="/login" type="outline" />
+          <Button text="Register" link="/register" type="primary" />
+        </div>
+      )}
     </nav>
   );
 }
