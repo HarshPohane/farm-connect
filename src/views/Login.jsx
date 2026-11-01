@@ -52,7 +52,7 @@ function Login() {
 
         <div className="login-image">
 
-          <img src="/images/farmer.png" alt="Farmer" />
+          <img src="/images/farm-field.jpg" alt="Golden farm field at sunset" />
 
         </div>
 

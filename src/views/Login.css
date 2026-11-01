@@ -25,17 +25,23 @@
 
 .login-image {
   width: 45%;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
   background: #1B5E20;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 30px;
 }
 
 .login-image img {
+  position: absolute;
+  inset: 0;
   width: 100%;
-  max-width: 300px;
-  object-fit: contain;
+  height: 100%;
+  max-width: none;
+  object-fit: cover;
+  display: block;
 }
 
 /* Right Login Section */
@@ -140,12 +146,11 @@
 
   .login-image {
     width: 100%;
-    box-sizing: border-box;
-    padding: 20px;
+    height: 190px;
   }
 
   .login-image img {
-    max-width: 170px;
+    max-width: none;
   }
 
   .login-content {

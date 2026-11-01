@@ -54,7 +54,7 @@ function Register() {
 
         <div className="register-image">
 
-          <img src="/images/farmer.png" alt="Farmer" />
+          <img src="/images/farm-field.jpg" alt="Golden farm field at sunset" />
 
           <h2>Join FarmConnect</h2>
 

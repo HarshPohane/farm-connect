@@ -1,4 +1,10 @@
-import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
+import {
+  BrowserRouter,
+  Navigate,
+  Route,
+  Routes,
+  useLocation,
+} from "react-router-dom";
 
 import Navbar from "./component/Navbar";
 import Footer from "./component/Footer";
@@ -11,9 +17,12 @@ import Login from "./views/Login";
 import Register from "./views/Register";
 import ProtectedRoute from "./component/ProtectedRoute";
 
-function App() {
+function AppContent() {
+  const { pathname } = useLocation();
+  const isAuthenticated = Boolean(localStorage.getItem("currentUser"));
+
   return (
-    <BrowserRouter>
+    <>
       <Navbar />
 
       <Routes>
@@ -30,7 +39,17 @@ function App() {
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
 
-      <Footer />
+      {isAuthenticated && pathname !== "/login" && pathname !== "/register" && (
+        <Footer />
+      )}
+    </>
+  );
+}
+
+function App() {
+  return (
+    <BrowserRouter>
+      <AppContent />
     </BrowserRouter>
   );
 }
