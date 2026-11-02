@@ -37,10 +37,12 @@ function Navbar() {
           </div>
         </>
       ) : (
-        <div className="nav-buttons">
-          <Button text="Login" link="/login" type="outline" />
-          <Button text="Register" link="/register" type="primary" />
-        </div>
+        <>
+          <div className="nav-buttons">
+            <Button text="Login" link="/login" type="outline" />
+            <Button text="Register" link="/register" type="primary" />
+          </div>
+        </>
       )}
     </nav>
   );

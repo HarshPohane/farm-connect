@@ -46,16 +46,16 @@
 }
 
 .nav-links a {
-  color: #46564b;
+  color: black;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: bold;
   text-decoration: none;
   transition: 0.3s;
 }
 
 .nav-links a:hover,
 .nav-links a.active {
-  color: #2e8b57;
+  color: #f97316;
 }
 
 /* Navbar Buttons */
@@ -97,7 +97,7 @@
   }
 
   .nav-links {
-    gap: 15px;
+    gap: 18px;
   }
 
   .nav-links a {

@@ -1,6 +1,19 @@
 import Button from "../component/Button/button";
 import "./Home.css";
 
+const FALLBACK_IMAGE = "/images/farm-field.jpg";
+
+function handleImageError(event) {
+  const image = event.currentTarget;
+
+  if (image.dataset.fallbackApplied) {
+    return;
+  }
+
+  image.dataset.fallbackApplied = "true";
+  image.src = FALLBACK_IMAGE;
+}
+
 function Home() {
   return (
     <div className="home">
@@ -46,6 +59,8 @@ function Home() {
 
         <div className="hero-image">
           <img
+            alt="Sunlit farmland"
+            onError={handleImageError}
             src="https://imgs.search.brave.com/mMtil-Wva0d6oSKKMP5ueIQjfx6AWFIG8Lo2cProccQ/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9wbHVz/LnVuc3BsYXNoLmNv/bS9wcmVtaXVtX3Bo/b3RvLTE2ODIwOTIw/MzQyNjgtNjQ1MzIy/YzFkMzA4P2ZtPWpw/ZyZxPTYwJnc9MzAw/MCZhdXRvPWZvcm1h/dCZmaXQ9Y3JvcCZp/eGxpYj1yYi00LjEu/MCZpeGlkPU5Id3hN/akEzZkRBPQ"
           />
         </div>
@@ -81,6 +96,7 @@ function Home() {
             <img
               src="https://imgs.search.brave.com/bjzlFfEW21UMus24Y8uW4Mdh5ceuf_ydFx2gv68J12Q/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvOTkw/ODk4MDEyL3Bob3Rv/L2luZGlhbi1mYXJt/ZXItaG9sZGluZy1j/cm9wLXBsYW50LWlu/LWhpcy13aGVhdC1m/aWVsZC5qcGc_cz02/MTJ4NjEyJnc9MCZr/PTIwJmM9M0phOV9r/OThNVjYwNUJacHpV/S0oyclFXSU1EUXhj/Q0lXekhmTml5c1gy/Zz0"
               alt="Farmer inspecting a crop in a field"
+              
             />
 
             <h3>Find Farm Workers</h3>
@@ -101,6 +117,7 @@ function Home() {
             <img
               src="https://imgs.search.brave.com/eyp5cfA1_yRNvegp5DiSzroFVhzU30HKOrWIbxvs_oM/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzA3LzMzLzc5Lzg5/LzM2MF9GXzczMzc5/ODk1NF9qbHlNdm9X/Qk51bnY1TXg2NHRt/NlNPd3g5anJGWHlo/Vy5qcGc"
               alt="Farm tractor"
+              
             />
 
             <h3>Rent Equipment</h3>
@@ -121,6 +138,7 @@ function Home() {
             <img
               src="https://imgs.search.brave.com/zUIGcoa50nYv2CKYVaBRqdTWczkpKvZcFrch1wHRxM4/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMjE2/MDkxNTcyNS9waG90/by9mYXJtLXdvcmtl/cnMtaW4tc21hbGwt/dHJ1Y2std2l0aC1o/YXJ2ZXN0ZWQtdmVn/ZXRhYmxlcy1kcml2/aW5nLXRvLWxvY2Fs/LW1hcmtldC5qcGc_/cz02MTJ4NjEyJnc9/MCZrPTIwJmM9ZW1D/d2M1NE5YaGF3RnZU/N0VSYW1WMUlubmYt/SzBrb0UzWmt2UWxZ/OTRoMD0"
               alt="Agricultural transport truck"
+            
             />
 
             <h3>Book Transportation</h3>
@@ -175,6 +193,9 @@ function Home() {
           <img
             src="https://imgs.search.brave.com/fqv-cC0RAZ568hUeB3zRPQ4VzoYhRSR3VfI75ZnVRfc/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvNjE1/MTk0NTI0L3Bob3Rv/L2luZGlhbi1mYXJt/ZXItaW4tcmljZS1m/aWVsZC5qcGc_cz02/MTJ4NjEyJnc9MCZr/PTIwJmM9RElsWk1x/c3FiTHhlTzA2QW90/RjFWb3F4Z1FiV3pZ/NDA5SDZERHJ3ZklU/TT0"
             alt="Green agricultural field"
+            onError={handleImageError}
+            loading="lazy"
+            decoding="async"
           />
         </div>
 

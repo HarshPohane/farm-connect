@@ -56,7 +56,7 @@ function Register() {
 
           <img src="/images/farm-field.jpg" alt="Golden farm field at sunset" />
 
-          <h2>Join FarmConnect</h2>
+          <h2>Farm-Connect</h2>
 
           <p>
             Connecting Farmers with Workers,

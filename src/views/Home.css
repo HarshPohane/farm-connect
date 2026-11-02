@@ -144,6 +144,12 @@
 }
 
 .service-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 0;
+  height: 100%;
+  box-sizing: border-box;
   padding: 25px;
   background: #ffffff;
   border: 1px solid #e5eee5;
@@ -154,8 +160,10 @@
 .service-card img {
   display: block;
   width: 100%;
-  aspect-ratio: 16 / 10;
+  max-width: 100%;
   height: auto;
+  aspect-ratio: 16 / 10;
+  flex-shrink: 0;
   object-fit: cover;
   object-position: center;
   margin-bottom: 15px;
@@ -173,8 +181,13 @@
 .service-card p {
   color: #526357;
   line-height: 1.7;
+  flex: 1;
   min-height: 82px;
   margin-bottom: 22px;
+}
+
+.service-card .custom-btn {
+  margin-top: auto;
 }
 
 .how-section {
